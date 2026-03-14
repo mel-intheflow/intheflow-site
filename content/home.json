@@ -3,14 +3,14 @@
     "whatsappLabel": "Kontaktiere mich gerne per WhatsApp",
     "statusTitle": "Freie Plätze und Einstieg",
     "impulsTitle": "Lass uns unverbindlich starten",
-    "quoteText": "Und mögen all meine Worte, Gedanken und Taten zu diesem Glück und dieser Freiheit beitragen.",
+    "quoteText": "Das erste \"Danke\", der nach jeder Einheit abschließenden Dankbarkeitsübung, gehört alleine dir, aus Respekt und Demut, vor deinem ganz persönlichem Lebensweg.",
     "intro": "Gemeinsam können wir gerne ein Konzept für dich, eine Gruppe, fürs Firmenyoga oder für Fastenbegleitung erarbeiten.",
     "statusText1": "Ob aktuell freie Plätze verfügbar sind, erfährst du am schnellsten per WhatsApp.",
     "statusText2": "Ein Einstieg ist als Schnuppereinheit oder über den Yoga-Basis-Block möglich.",
     "impulsText1": "Wenn du spürst, dass dir Yoga, Fastenbegleitung oder ein ruhiger Ausgleich guttun würde, schreib mir einfach per WhatsApp.",
     "headline": "Kontakt",
     "impulsText2": "Ich freue mich auf deine Nachricht.",
-    "quote": "Mögen alle Menschen und Lebewesen auf dieser Welt glücklich und frei sein."
+    "quote": "Dankbarkeit, Respekt und Wertschätzung beginnt bei dir. "
   },
   "schnuppern": {
     "title": "Sanfter Einstieg",
@@ -77,10 +77,9 @@
       "kicker": "Hofstätten",
       "title": "Feuerwehrhaus, Mehrzweckraum",
       "rows": [
-        "Ort: Hofstätten, Feuerwehrhaus",
-        "Zeit: Montag 18:30 bis 19:45 Uhr",
-        "Zeit: Mittwoch 18:15 bis 19:30 Uhr",
-        "Info: Feiertage entfallen."
+        "Ort: Hofstätten a.d. Raab, Feuerwehrhaus",
+        "Zeit: Mittwoch 18:30 bis 19:45 Uhr",
+        "Info: Feiertage entfallen. Kleine Sommer- und Winterpause"
       ]
     },
     {
@@ -88,8 +87,8 @@
       "title": "Gemeindezentrum Mortantsch",
       "rows": [
         "Ort: Weiz/Mortantsch, Gemeindezentrum",
-        "Zeit: Donnerstag von 18:15 bis 19:30 Uhr",
-        "Info: Feiertage entfallen.",
+        "Zeit: Dienstag von 18:00 bis 19:15 Uhr",
+        "Info: Feiertage entfallen. Kleine Sommer- und Winterpause",
         "Saisonal: Outdoor Yoga von Juni bis August, Indoor Yoga von September bis Mai"
       ]
     },
@@ -98,8 +97,8 @@
       "title": "Weiz Outdoor Yoga",
       "rows": [
         "Ort: Stelzhammergasse 13, Weiz",
-        "Zeit: Juni bis August, Donnerstag 18:00 bis 19:00 Uhr",
-        "Info: 10 Yoga-Einheiten im Freien."
+        "Zeit: Juni bis August, Dienstag od. Donnerstag (Wetterabhängig) 18:00 bis 19:00 Uhr",
+        "Info: mind. 8 Yoga-Einheiten im Freien."
       ]
     }
   ],
@@ -130,7 +129,7 @@
     {
       "kicker": "Online Special",
       "title": "108 Sonnengrüße",
-      "text": "Dieses Format findet einmal jährlich online statt und ist ein kraftvoller Start in den neuen Zyklus.",
+      "text": "Dieses Format findet einmal jährlich im Jänner statt und ist ein kraftvoller & bewusster Start ins neue Jahr. ",
       "format": "Online (Zoom)",
       "haeufigkeit": "Einmal pro Jahr"
     },
@@ -138,14 +137,14 @@
       "kicker": "Retreat",
       "title": "Yoga & Fasten Retreat",
       "text": "Einmal im Jahr gibt es ein vertiefendes Retreat-Format mit Yoga, Fastenimpulsen und persönlicher Begleitung.",
-      "format": "Vor Ort",
+      "format": "Vor Ort, Glashütten, 8530 Gressenberg",
       "haeufigkeit": "Einmal pro Jahr"
     },
     {
-      "kicker": "Deep Relax",
+      "kicker": "Yogaabend mit Pflanzenwissen - Deep Relax",
       "title": "Yoga mit Sound & Düften",
-      "text": "Dieses Jahres-Special verbindet sanfte Yogapraxis mit Klang und ausgewählten ätherischen Ölen.",
-      "format": "Vor Ort",
+      "text": "Dieses Jahres-Special verbindet sanfte Yogapraxis mit Klang und Themenbezogenes Wissen über Pflanzen und deren ausgewählten ätherischen Ölen.\nIn Zusammenarbeit mit Kräuterpädagogin Sabrina Lukas (www.natur-sinn.at)\nDauer ca. 2,5 Stunden\nDatum und Einzelheiten folgen.",
+      "format": "Vor Ort, Hofstätten a.d. Raab, Feuerwehrhaus",
       "haeufigkeit": "Einmal pro Jahr"
     }
   ],
@@ -172,6 +171,6 @@
   },
   "veranstaltungen": {
     "headline": "Fixe Jahres-Highlights rund um Yoga, Fasten, Sound und Düfte",
-    "intro": "Neben den laufenden Kursen gibt es bei In the flow drei wiederkehrende Veranstaltungsformate, die einmal pro Jahr stattfinden."
+    "intro": "Neben den laufenden Kursen gibt es bei Intheflow drei wiederkehrende Veranstaltungsformate, die einmal pro Jahr stattfinden."
   }
 }

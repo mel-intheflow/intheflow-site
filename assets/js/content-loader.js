@@ -9,21 +9,22 @@
 
     const hero = document.querySelector('section.hero .hero-copy');
     if (hero && c.hero) {
+      const eyebrow = hero.querySelector('.eyebrow');
       const h1 = hero.querySelector('h1');
       const ps = hero.querySelectorAll('p');
       const ctaPrimary = hero.querySelector('.hero-actions .button');
       const ctaSecondary = hero.querySelector('.hero-actions .link-pill');
+      if (eyebrow && c.hero.eyebrow) eyebrow.textContent = c.hero.eyebrow;
       if (h1 && c.hero.headline) h1.textContent = c.hero.headline;
       if (ps[1] && c.hero.text1) ps[1].textContent = c.hero.text1;
       if (ps[2] && c.hero.text2) ps[2].textContent = c.hero.text2;
       if (ctaPrimary && c.hero.ctaPrimaryLabel) ctaPrimary.textContent = c.hero.ctaPrimaryLabel;
       if (ctaSecondary && c.hero.ctaSecondaryLabel) ctaSecondary.textContent = c.hero.ctaSecondaryLabel;
-      const badgeTitle = document.querySelector('.hero-badge strong');
-      const badgeText = document.querySelector('.hero-badge');
-      if (badgeTitle && c.hero.badgeTitle) badgeTitle.textContent = c.hero.badgeTitle;
-      if (badgeText && c.hero.badgeText) {
-        badgeText.childNodes.forEach((n, i) => { if (i > 0) n.remove(); });
-        badgeText.appendChild(document.createTextNode(' ' + c.hero.badgeText));
+      const badge = document.querySelector('.hero-badge');
+      if (badge && (c.hero.badgeTitle || c.hero.badgeText)) {
+        const t = c.hero.badgeTitle || '';
+        const x = c.hero.badgeText || '';
+        badge.innerHTML = `<strong>${t}</strong> ${x}`.trim();
       }
     }
 

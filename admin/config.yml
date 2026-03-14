@@ -26,6 +26,7 @@ collections:
             name: "hero"
             widget: "object"
             fields:
+              - { label: "Top-Zitat", name: "eyebrow", widget: "string" }
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Text 1", name: "text1", widget: "text" }
               - { label: "Text 2", name: "text2", widget: "text" }

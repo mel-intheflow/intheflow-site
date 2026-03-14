@@ -27,24 +27,42 @@ collections:
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Text 1", name: "text1", widget: "text" }
               - { label: "Text 2", name: "text2", widget: "text" }
+              - { label: "CTA Primär", name: "ctaPrimaryLabel", widget: "string" }
+              - { label: "CTA Sekundär", name: "ctaSecondaryLabel", widget: "string" }
+
           - label: "Angebot"
             name: "angebot"
             widget: "object"
             fields:
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Intro", name: "intro", widget: "text" }
+
           - label: "Kurse"
             name: "kurse"
             widget: "object"
             fields:
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Intro", name: "intro", widget: "text" }
-          - label: "Veranstaltungen"
+
+          - label: "Veranstaltungen Intro"
             name: "veranstaltungen"
             widget: "object"
             fields:
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Intro", name: "intro", widget: "text" }
+
+          - label: "Event Cards"
+            name: "events"
+            widget: "list"
+            min: 3
+            max: 3
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Format", name: "format", widget: "string" }
+              - { label: "Häufigkeit", name: "haeufigkeit", widget: "string" }
+
           - label: "Kontakt"
             name: "kontakt"
             widget: "object"

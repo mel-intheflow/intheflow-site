@@ -2,7 +2,9 @@
   "hero": {
     "headline": "Yoga in Gleisdorf und Weiz für mehr Ruhe, Kraft und innere Balance.",
     "text1": "Das Leben ist nicht linear, es verläuft in Wellen. Yoga begleitet mich seit vielen Jahren als kraftspendende Quelle durch Transformation, Selbstliebe, Dankbarkeit und ein tieferes Spüren für Körper, Geist und Seele.",
-    "text2": "In meinen Yogakursen im Raum Gleisdorf und Weiz verbinde ich Atembewusstsein, sanfte Kräftigung, Entspannung, Sound und den achtsamen Einsatz ätherischer Öle. Ergänzend begleite ich Menschen bei Fastenprozessen und in besonderen Veränderungsphasen."
+    "text2": "In meinen Yogakursen im Raum Gleisdorf und Weiz verbinde ich Atembewusstsein, sanfte Kräftigung, Entspannung, Sound und den achtsamen Einsatz ätherischer Öle. Ergänzend begleite ich Menschen bei Fastenprozessen und in besonderen Veränderungsphasen.",
+    "ctaPrimaryLabel": "Kurse ansehen",
+    "ctaSecondaryLabel": "Kontaktiere mich gerne"
   },
   "angebot": {
     "headline": "Yoga und Fastenbegleitung",
@@ -20,5 +22,28 @@
     "headline": "Kontakt",
     "intro": "Gemeinsam können wir gerne ein Konzept für dich, eine Gruppe, fürs Firmenyoga oder für Fastenbegleitung erarbeiten.",
     "whatsappLabel": "Kontaktiere mich gerne per WhatsApp"
-  }
+  },
+  "events": [
+    {
+      "kicker": "Online Special",
+      "title": "108 Sonnengrüße",
+      "text": "Dieses Format findet einmal jährlich online statt und ist ein kraftvoller Start in den neuen Zyklus.",
+      "format": "Online (Zoom)",
+      "haeufigkeit": "Einmal pro Jahr"
+    },
+    {
+      "kicker": "Retreat",
+      "title": "Yoga & Fasten Retreat",
+      "text": "Einmal im Jahr gibt es ein vertiefendes Retreat-Format mit Yoga, Fastenimpulsen und persönlicher Begleitung.",
+      "format": "Vor Ort",
+      "haeufigkeit": "Einmal pro Jahr"
+    },
+    {
+      "kicker": "Deep Relax",
+      "title": "Yoga mit Sound & Düften",
+      "text": "Dieses Jahres-Special verbindet sanfte Yogapraxis mit Klang und ausgewählten ätherischen Ölen.",
+      "format": "Vor Ort",
+      "haeufigkeit": "Einmal pro Jahr"
+    }
+  ]
 }

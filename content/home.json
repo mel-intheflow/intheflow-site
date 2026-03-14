@@ -18,7 +18,7 @@
   },
   "hinweis": {
     "title": "Wichtige Fasten-Information",
-    "text1": "Bei langfristigen oder chronischen Erkrankungen, Erbkrankheiten, dauerhafter Medikamenteneinnahme oder sonstigen Bedenken ist vor dem Fasten unbedingt ärztlicher Rat einzuholen.",
+    "text1": "Bei langfristigen oder chronischen Erkrankungen, Erbkrankheiten oder dauerhafter Medikamenteneinnahme ist vor dem Fasten unbedingt ärztlicher Rat einzuholen.",
     "text2": "Nicht fasten sollten Schwangere, Stillende, Jugendliche und Kinder. Eine Fastenkur ersetzt keine medizinische Behandlung."
   },
   "offerCards": [
@@ -109,9 +109,9 @@
     "zielgruppeTitle": "Für wen ist mein Yoga geeignet?",
     "arbeitsweiseText1": "Ich arbeite ruhig, achtsam und klar strukturiert. Jede Einheit verbindet Bewegung, Atem und Entspannung.",
     "arbeitsweiseText2": "Durch kleine Gruppen ist persönliche Begleitung möglich — mit Raum für Fragen und individuelle Anpassungen.",
-    "intro": "Yoga ist für mich mehr als Bewegung. Es ist ein Weg, den eigenen Körper bewusster wahrzunehmen, den Atem als Kraftquelle zu nutzen und im Alltag wieder mehr Ruhe, Stabilität und Vertrauen zu finden.",
+    "intro": "Yoga ist mehr als Bewegung. Es ist ein Weg, den eigenen Körper bewusster wahrzunehmen, den Atem als Kraftquelle zu nutzen und im Alltag wieder mehr Ruhe, Stabilität und Vertrauen zu finden.",
     "zielgruppeText1": "Meine Kurse sind für Menschen geeignet, die sich im Alltag eine bewusste Pause wünschen — egal ob Einsteiger oder Wiedereinsteiger.",
-    "fastenTitle": "Fastenbegleitung mit Struktur und persönlicher Begleitung",
+    "fastenTitle": "Fastenbegleitung mit Struktur und individueller Begleitung",
     "zielgruppeText2": "Besonders angesprochen sind Teilnehmerinnen und Teilnehmer aus dem Raum Weiz und Gleisdorf, die in einer kleinen, persönlichen Gruppe üben möchten.",
     "fastenText1": "Die Fastenbegleitung richtet sich an Menschen, die bewusst entlasten und ihren Körper achtsam unterstützen möchten.",
     "arbeitsweiseTitle": "Was macht meine Begleitung besonders?"
@@ -124,7 +124,7 @@
       "2020 kam ein Online-Studium im Bereich Gesundheitsvorsorge, Gesundheitserhaltung und Fastenbegleitung hinzu. 2022 begann außerdem die Ausbildung zur Ganzheitlichen Gesundheitsberaterin nach Dr. Rüdiger Dahlke."
     ],
     "rightHeading": "Zertifikate für Yoga, Fasten und Gesundheit",
-    "infoNote": "Yoga hilft enorm dabei, sich in seiner Mitte wiederzufinden. Es kann viel Licht und Selbstsicherheit ins Leben bringen."
+    "infoNote": "Yoga hilft enorm dabei, sich in seiner Mitte wiederzufinden. Es kann viel Klarheit und Selbstsicherheit ins Leben bringen."
   },
   "events": [
     {
@@ -155,9 +155,9 @@
   },
   "hero": {
     "eyebrow": "Yoga is not about touching your toes. It is what you learn on the way down. -Jigar Gor",
-    "headline": "Yoga in Gleisdorf und Weiz für mehr Ruhe, Kraft und innere Balance.",
-    "text1": "Das Leben ist nicht linear, es verläuft in Wellen. Yoga begleitet mich seit vielen Jahren als kraftspendende Quelle durch Transformation, Selbstliebe, Dankbarkeit und ein tieferes Spüren für Körper, Geist und Seele.",
-    "text2": "In meinen Yogakursen im Raum Gleisdorf und Weiz verbinde ich Atembewusstsein, sanfte Kräftigung, Entspannung, Sound und den achtsamen Einsatz ätherischer Öle. Ergänzend begleite ich Menschen bei Fastenprozessen und in besonderen Veränderungsphasen.",
+    "headline": "Yoga in Gleisdorf und Weiz mit Ruhe und Tiefe, für neues Wohlbefinden in deiner Kraft",
+    "text1": "Das Leben - ist nicht linear, es verläuft in Wellen. Yoga begleitet mich seit vielen Jahren als kraftspendende Quelle durch Transformation, Selbstliebe, Dankbarkeit und ein tiefes intuitives Spüren für Körper, Geist und Seele.\n\nIch bin - Melanie. Yogalehrerin, Fastenbegleiterin, glückliche Ehefrau und Mama :) und noch vieles mehr.\n\nGlück - Zum Glück gehören nicht die Umstände, sondern die Dankbarkeit für das, was bereits da ist und selbstverständlich erscheint, die unzähligen Perspektiven & Möglichkeiten - das ist ein Teil davon, was in uns Glück auslöst.",
+    "text2": "Yoga bei mir ist - bodenständig, respektvoll, kraftvoll, bewusst und vor allem entspannend.\n\nIn meinen Einheiten - verwende ich gerne Kartendecks, hochwertige ätherische Öle, Räucherwerk und Musik, (bei Seminaren und Retreats auch Handpan, Klangschalen uvm.).\nDurch Atembewusstsein, dem Wechsel aus Flows und Asanas sowie Mediation fließen wie am Ende der Stunde entspannt in die beliebte Schlussentspannung - Yoga Nidra. \n\nRetreats - Ergänzend begleite ich Menschen bei Fastenprozessen und in besonderen Veränderungsphasen. Ich leite Yoga Retreats und Seminare/Yoga - Themenabende, in wertvoller Zusammenarbeit mit großartigen, bereichernden Frauen.",
     "ctaPrimaryLabel": "Kurse ansehen",
     "ctaSecondaryLabel": "Kontaktiere mich gerne",
     "badgeTitle": "Raum Weiz und Gleisdorf",

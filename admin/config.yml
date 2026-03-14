@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: mel-intheflow/intheflow-site
+  name: git-gateway
   branch: main
 
 site_url: https://intheflow.at/beta/

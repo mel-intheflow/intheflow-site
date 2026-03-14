@@ -1,27 +1,138 @@
 {
+  "brand": {
+    "subtitle": "Yoga, Fasten und ganzheitliche Gesundheit"
+  },
   "hero": {
     "headline": "Yoga in Gleisdorf und Weiz für mehr Ruhe, Kraft und innere Balance.",
     "text1": "Das Leben ist nicht linear, es verläuft in Wellen. Yoga begleitet mich seit vielen Jahren als kraftspendende Quelle durch Transformation, Selbstliebe, Dankbarkeit und ein tieferes Spüren für Körper, Geist und Seele.",
     "text2": "In meinen Yogakursen im Raum Gleisdorf und Weiz verbinde ich Atembewusstsein, sanfte Kräftigung, Entspannung, Sound und den achtsamen Einsatz ätherischer Öle. Ergänzend begleite ich Menschen bei Fastenprozessen und in besonderen Veränderungsphasen.",
     "ctaPrimaryLabel": "Kurse ansehen",
-    "ctaSecondaryLabel": "Kontaktiere mich gerne"
+    "ctaSecondaryLabel": "Kontaktiere mich gerne",
+    "badgeTitle": "Raum Weiz und Gleisdorf",
+    "badgeText": "Yoga in Kleingruppen, Einzelstunden, Online-Angebote, Fastenbegleitung und ganzheitliche Gesundheit."
+  },
+  "about": {
+    "leftHeading": "Yoga-Erfahrung, Ausbildung und ganzheitliche Begleitung",
+    "leftParagraphs": [
+      "Inspiriert durch meine Yoga-Lehrerin Margarethe Weitzendorf begann ich 2013 berufsbegleitend die Grundausbildung TriYoga Teachertraining Basics in Graz im TriYoga Center an der Mur bei Angelika Gärber.",
+      "Nach dem Abschluss begann ich sofort zu unterrichten und absolvierte anschließend TriYoga Level 1, Level 2 und später Level 3. Ergänzend besuchte ich therapeutische Fortbildungen.",
+      "2020 kam ein Online-Studium im Bereich Gesundheitsvorsorge, Gesundheitserhaltung und Fastenbegleitung hinzu. 2022 begann außerdem die Ausbildung zur Ganzheitlichen Gesundheitsberaterin nach Dr. Rüdiger Dahlke."
+    ],
+    "rightHeading": "Zertifikate für Yoga, Fasten und Gesundheit",
+    "infoNote": "Yoga hilft enorm dabei, sich in seiner Mitte wiederzufinden. Es kann viel Licht und Selbstsicherheit ins Leben bringen."
+  },
+  "approach": {
+    "heading": "Mit Klarheit, Ruhe und persönlicher Begleitung",
+    "intro": "Yoga ist für mich mehr als Bewegung. Es ist ein Weg, den eigenen Körper bewusster wahrzunehmen, den Atem als Kraftquelle zu nutzen und im Alltag wieder mehr Ruhe, Stabilität und Vertrauen zu finden.",
+    "zielgruppeTitle": "Für wen ist mein Yoga geeignet?",
+    "zielgruppeText1": "Meine Kurse sind für Menschen geeignet, die sich im Alltag eine bewusste Pause wünschen — egal ob Einsteiger oder Wiedereinsteiger.",
+    "zielgruppeText2": "Besonders angesprochen sind Teilnehmerinnen und Teilnehmer aus dem Raum Weiz und Gleisdorf, die in einer kleinen, persönlichen Gruppe üben möchten.",
+    "arbeitsweiseTitle": "Was macht meine Begleitung besonders?",
+    "arbeitsweiseText1": "Ich arbeite ruhig, achtsam und klar strukturiert. Jede Einheit verbindet Bewegung, Atem und Entspannung.",
+    "arbeitsweiseText2": "Durch kleine Gruppen ist persönliche Begleitung möglich — mit Raum für Fragen und individuelle Anpassungen.",
+    "fastenTitle": "Fastenbegleitung mit Struktur und persönlicher Begleitung",
+    "fastenText1": "Die Fastenbegleitung richtet sich an Menschen, die bewusst entlasten und ihren Körper achtsam unterstützen möchten.",
+    "fastenText2": "Dazu gehören individuelles Vorgehen, hilfreiche Unterlagen und persönliche Begleitung während der definierten Zeit."
   },
   "angebot": {
     "headline": "Yoga und Fastenbegleitung",
     "intro": "Das bestehende Angebot richtet sich an Menschen im Raum Weiz und Gleisdorf, die Yoga, Fastenbegleitung, individuelle Begleitung und ganzheitliche Gesundheitsimpulse in einer ruhigen, persönlichen Atmosphäre suchen."
   },
+  "offerCards": [
+    {
+      "kicker": "Yoga",
+      "title": "Kurse und Begleitung",
+      "items": [
+        "Kurse in Kleingruppen mit 6 bis maximal 10 Personen im Raum Weiz/Gleisdorf",
+        "Outdoor Yoga im Sommer",
+        "Online Yoga via Zoom",
+        "Einzelstunden alleine oder zu zweit",
+        "Firmenyoga sowie Seminare und Workshops",
+        "Soundhealing mit Handpan, Klangschalen und mehr",
+        "Ätherische Öle von Feeling begleiten die Yogakurse"
+      ]
+    },
+    {
+      "kicker": "Yoga Basis",
+      "title": "Individueller Einstieg",
+      "items": [
+        "Perfekt zum Einstieg für neue Teilnehmerinnen und Teilnehmer",
+        "5er-Block mit 5 individuellen Terminen innerhalb von 5 bis 6 Wochen",
+        "Möglich für 1 bis 3 Personen",
+        "Bei anschließendem Kauf eines 10er-Blocks einmalig 13 Einheiten zum Preis von 10, danach 10 plus 1"
+      ]
+    },
+    {
+      "kicker": "Fasten",
+      "title": "Fastenbegleitung und ganzheitliche Gesundheit",
+      "items": [
+        "Seminare und individuell buchbare Einzeleinheiten von 2 bis 3 Stunden",
+        "Individuelle Fastenbegleitung",
+        "Fastenwissen als Vortrag und schriftliches Handout",
+        "Ausarbeitung eines individuellen Fastenplans für 10 bis 14 Tage",
+        "Vorbereitungsliste, Einkaufsliste und Hilfsmittel inklusive",
+        "Reflexionsblätter für jeden Fastentag",
+        "Begleitung per WhatsApp während der definierten Fastenzeit",
+        "Während der Fastenzeit kostenlose Teilnahme an allen Yogakursen in Präsenz oder online"
+      ]
+    }
+  ],
+  "hinweis": {
+    "title": "Wichtige Fasten-Information",
+    "text1": "Bei langfristigen oder chronischen Erkrankungen, Erbkrankheiten, dauerhafter Medikamenteneinnahme oder sonstigen Bedenken ist vor dem Fasten unbedingt ärztlicher Rat einzuholen.",
+    "text2": "Nicht fasten sollten Schwangere, Stillende, Jugendliche und Kinder. Eine Fastenkur ersetzt keine medizinische Behandlung."
+  },
   "kurse": {
     "headline": "Yoga-Kurse im Raum Weiz und Gleisdorf",
     "intro": "Hier findest du die aktuell geführten Kurse im Raum Weiz und Gleisdorf."
   },
+  "courseCards": [
+    {
+      "kicker": "Online Yoga",
+      "title": "Zoom Kurs",
+      "rows": [
+        "Ort: Online mit Zoom App",
+        "Zeit: Dienstag von 18:00 bis 19:00 Uhr",
+        "Info: Laufender Online-Kurs. Den Link zum Einloggen gibt es auf Anfrage."
+      ]
+    },
+    {
+      "kicker": "Hofstätten",
+      "title": "Feuerwehrhaus, Mehrzweckraum",
+      "rows": [
+        "Ort: Hofstätten, Feuerwehrhaus",
+        "Zeit: Montag 18:30 bis 19:45 Uhr",
+        "Zeit: Mittwoch 18:15 bis 19:30 Uhr",
+        "Info: Feiertage entfallen."
+      ]
+    },
+    {
+      "kicker": "Weiz",
+      "title": "Gemeindezentrum Mortantsch",
+      "rows": [
+        "Ort: Weiz/Mortantsch, Gemeindezentrum",
+        "Zeit: Donnerstag von 18:15 bis 19:30 Uhr",
+        "Info: Feiertage entfallen.",
+        "Saisonal: Outdoor Yoga von Juni bis August, Indoor Yoga von September bis Mai"
+      ]
+    },
+    {
+      "kicker": "Outdoor",
+      "title": "Weiz Outdoor Yoga",
+      "rows": [
+        "Ort: Stelzhammergasse 13, Weiz",
+        "Zeit: Juni bis August, Donnerstag 18:00 bis 19:00 Uhr",
+        "Info: 10 Yoga-Einheiten im Freien."
+      ]
+    }
+  ],
+  "schnuppern": {
+    "title": "Sanfter Einstieg",
+    "text": "Die allererste Schnuppereinheit in einem fixen Kurs ist kostenlos. Bei jedem gekauften 10er-Block ist eine weitere Einheit als Dankeschön geschenkt."
+  },
   "veranstaltungen": {
     "headline": "Fixe Jahres-Highlights rund um Yoga, Fasten, Sound und Düfte",
     "intro": "Neben den laufenden Kursen gibt es bei In the flow drei wiederkehrende Veranstaltungsformate, die einmal pro Jahr stattfinden."
-  },
-  "kontakt": {
-    "headline": "Kontakt",
-    "intro": "Gemeinsam können wir gerne ein Konzept für dich, eine Gruppe, fürs Firmenyoga oder für Fastenbegleitung erarbeiten.",
-    "whatsappLabel": "Kontaktiere mich gerne per WhatsApp"
   },
   "events": [
     {
@@ -45,5 +156,21 @@
       "format": "Vor Ort",
       "haeufigkeit": "Einmal pro Jahr"
     }
-  ]
+  ],
+  "kontakt": {
+    "headline": "Kontakt",
+    "intro": "Gemeinsam können wir gerne ein Konzept für dich, eine Gruppe, fürs Firmenyoga oder für Fastenbegleitung erarbeiten.",
+    "whatsappLabel": "Kontaktiere mich gerne per WhatsApp",
+    "quote": "Mögen alle Menschen und Lebewesen auf dieser Welt glücklich und frei sein.",
+    "quoteText": "Und mögen all meine Worte, Gedanken und Taten zu diesem Glück und dieser Freiheit beitragen.",
+    "statusTitle": "Freie Plätze und Einstieg",
+    "statusText1": "Ob aktuell freie Plätze verfügbar sind, erfährst du am schnellsten per WhatsApp.",
+    "statusText2": "Ein Einstieg ist als Schnuppereinheit oder über den Yoga-Basis-Block möglich.",
+    "impulsTitle": "Lass uns unverbindlich starten",
+    "impulsText1": "Wenn du spürst, dass dir Yoga, Fastenbegleitung oder ein ruhiger Ausgleich guttun würde, schreib mir einfach per WhatsApp.",
+    "impulsText2": "Ich freue mich auf deine Nachricht."
+  },
+  "footer": {
+    "copyright": "© In the flow"
+  }
 }

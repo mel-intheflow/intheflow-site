@@ -20,6 +20,8 @@ collections:
         file: "content/home.json"
         format: "json"
         fields:
+          - { label: "Brand Subtitle", name: "brand", widget: "object", fields: [{ label: "Subtitle", name: "subtitle", widget: "string" }] }
+
           - label: "Hero"
             name: "hero"
             widget: "object"
@@ -29,33 +31,90 @@ collections:
               - { label: "Text 2", name: "text2", widget: "text" }
               - { label: "CTA Primär", name: "ctaPrimaryLabel", widget: "string" }
               - { label: "CTA Sekundär", name: "ctaSecondaryLabel", widget: "string" }
+              - { label: "Badge Titel", name: "badgeTitle", widget: "string" }
+              - { label: "Badge Text", name: "badgeText", widget: "text" }
 
-          - label: "Angebot"
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Linke Headline", name: "leftHeading", widget: "string" }
+              - { label: "Linke Absätze", name: "leftParagraphs", widget: "list", field: { label: "Absatz", name: "p", widget: "text" } }
+              - { label: "Rechte Headline", name: "rightHeading", widget: "string" }
+              - { label: "Info Note", name: "infoNote", widget: "text" }
+
+          - label: "Ganzheitlicher Ansatz"
+            name: "approach"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "heading", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Zielgruppe Titel", name: "zielgruppeTitle", widget: "string" }
+              - { label: "Zielgruppe Text 1", name: "zielgruppeText1", widget: "text" }
+              - { label: "Zielgruppe Text 2", name: "zielgruppeText2", widget: "text" }
+              - { label: "Arbeitsweise Titel", name: "arbeitsweiseTitle", widget: "string" }
+              - { label: "Arbeitsweise Text 1", name: "arbeitsweiseText1", widget: "text" }
+              - { label: "Arbeitsweise Text 2", name: "arbeitsweiseText2", widget: "text" }
+              - { label: "Fasten Titel", name: "fastenTitle", widget: "string" }
+              - { label: "Fasten Text 1", name: "fastenText1", widget: "text" }
+              - { label: "Fasten Text 2", name: "fastenText2", widget: "text" }
+
+          - label: "Angebot Header"
             name: "angebot"
             widget: "object"
             fields:
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Intro", name: "intro", widget: "text" }
 
-          - label: "Kurse"
+          - label: "Angebot Karten"
+            name: "offerCards"
+            widget: "list"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Items", name: "items", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+
+          - label: "Hinweiskarte"
+            name: "hinweis"
+            widget: "object"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text 1", name: "text1", widget: "text" }
+              - { label: "Text 2", name: "text2", widget: "text" }
+
+          - label: "Kurse Header"
             name: "kurse"
             widget: "object"
             fields:
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Intro", name: "intro", widget: "text" }
 
-          - label: "Veranstaltungen Intro"
+          - label: "Kurskarten"
+            name: "courseCards"
+            widget: "list"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Zeilen", name: "rows", widget: "list", field: { label: "Zeile", name: "row", widget: "string" } }
+
+          - label: "Schnuppern"
+            name: "schnuppern"
+            widget: "object"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+          - label: "Veranstaltungen Header"
             name: "veranstaltungen"
             widget: "object"
             fields:
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Intro", name: "intro", widget: "text" }
 
-          - label: "Event Cards"
+          - label: "Event Karten"
             name: "events"
             widget: "list"
             min: 3
-            max: 3
             fields:
               - { label: "Kicker", name: "kicker", widget: "string" }
               - { label: "Titel", name: "title", widget: "string" }
@@ -70,3 +129,13 @@ collections:
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Intro", name: "intro", widget: "text" }
               - { label: "WhatsApp Button", name: "whatsappLabel", widget: "string" }
+              - { label: "Zitat", name: "quote", widget: "text" }
+              - { label: "Zitat Text", name: "quoteText", widget: "text" }
+              - { label: "Status Titel", name: "statusTitle", widget: "string" }
+              - { label: "Status Text 1", name: "statusText1", widget: "text" }
+              - { label: "Status Text 2", name: "statusText2", widget: "text" }
+              - { label: "Impuls Titel", name: "impulsTitle", widget: "string" }
+              - { label: "Impuls Text 1", name: "impulsText1", widget: "text" }
+              - { label: "Impuls Text 2", name: "impulsText2", widget: "text" }
+
+          - { label: "Footer", name: "footer", widget: "object", fields: [{ label: "Copyright", name: "copyright", widget: "string" }] }

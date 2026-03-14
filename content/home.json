@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "headline": "Yoga in Gleisdorf und Weiz für mehr Ruhe, Kraft und innere Balance.",
+    "text1": "Das Leben ist nicht linear, es verläuft in Wellen. Yoga begleitet mich seit vielen Jahren als kraftspendende Quelle durch Transformation, Selbstliebe, Dankbarkeit und ein tieferes Spüren für Körper, Geist und Seele.",
+    "text2": "In meinen Yogakursen im Raum Gleisdorf und Weiz verbinde ich Atembewusstsein, sanfte Kräftigung, Entspannung, Sound und den achtsamen Einsatz ätherischer Öle. Ergänzend begleite ich Menschen bei Fastenprozessen und in besonderen Veränderungsphasen."
+  },
+  "angebot": {
+    "headline": "Yoga und Fastenbegleitung",
+    "intro": "Das bestehende Angebot richtet sich an Menschen im Raum Weiz und Gleisdorf, die Yoga, Fastenbegleitung, individuelle Begleitung und ganzheitliche Gesundheitsimpulse in einer ruhigen, persönlichen Atmosphäre suchen."
+  },
+  "kurse": {
+    "headline": "Yoga-Kurse im Raum Weiz und Gleisdorf",
+    "intro": "Hier findest du die aktuell geführten Kurse im Raum Weiz und Gleisdorf."
+  },
+  "veranstaltungen": {
+    "headline": "Fixe Jahres-Highlights rund um Yoga, Fasten, Sound und Düfte",
+    "intro": "Neben den laufenden Kursen gibt es bei In the flow drei wiederkehrende Veranstaltungsformate, die einmal pro Jahr stattfinden."
+  },
+  "kontakt": {
+    "headline": "Kontakt",
+    "intro": "Gemeinsam können wir gerne ein Konzept für dich, eine Gruppe, fürs Firmenyoga oder für Fastenbegleitung erarbeiten.",
+    "whatsappLabel": "Kontaktiere mich gerne per WhatsApp"
+  }
+}

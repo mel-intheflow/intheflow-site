@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /videothek.htm
+
+Sitemap: https://intheflow.at/sitemap.xml

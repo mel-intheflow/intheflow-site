@@ -1,0 +1,55 @@
+backend:
+  name: github
+  repo: mel-intheflow/intheflow-site
+  branch: main
+
+site_url: https://intheflow.at/beta/
+display_url: https://intheflow.at/beta/
+logo_url: /beta/images/avatar.webp
+
+media_folder: "images"
+public_folder: "/beta/images"
+
+publish_mode: simple
+
+collections:
+  - name: "home"
+    label: "Startseite Inhalte"
+    files:
+      - label: "Home Content"
+        name: "home_content"
+        file: "content/home.json"
+        format: "json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Text 1", name: "text1", widget: "text" }
+              - { label: "Text 2", name: "text2", widget: "text" }
+          - label: "Angebot"
+            name: "angebot"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Kurse"
+            name: "kurse"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Veranstaltungen"
+            name: "veranstaltungen"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Kontakt"
+            name: "kontakt"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "WhatsApp Button", name: "whatsappLabel", widget: "string" }

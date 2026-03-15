@@ -1,4 +1,38 @@
 (async function () {
+  function escapeHtml(str) {
+    return String(str ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function renderMarkdownLight(input) {
+    let s = escapeHtml(input).replace(/\r\n?/g, '\n');
+
+    // [text](https://...)
+    s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (_m, text, url) => {
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer">${text}</a>`;
+    });
+
+    // **bold**
+    s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    // *italic*
+    s = s.replace(/(^|[^*])\*(?!\s)(.+?)(?<!\s)\*(?!\*)/g, '$1<em>$2</em>');
+    // ==highlight==
+    s = s.replace(/==(.+?)==/g, '<mark>$1</mark>');
+
+    // New lines
+    s = s.replace(/\n/g, '<br>');
+    return s;
+  }
+
+  function setMd(el, value) {
+    if (!el || !value) return;
+    el.innerHTML = renderMarkdownLight(value);
+  }
+
   try {
     const res = await fetch('content/home.json', { cache: 'no-store' });
     if (!res.ok) return;
@@ -16,14 +50,32 @@
       const ctaSecondary = hero.querySelector('.hero-actions .link-pill');
       if (eyebrow && c.hero.eyebrow) eyebrow.textContent = c.hero.eyebrow;
       if (h1 && c.hero.headline) h1.textContent = c.hero.headline;
-      if (ps[1] && c.hero.text1) ps[1].textContent = c.hero.text1;
-      if (ps[2] && c.hero.text2) ps[2].textContent = c.hero.text2;
+      const heroTexts = [c.hero.text1, c.hero.text2, c.hero.text3, c.hero.text4, c.hero.text5, c.hero.text6].filter(Boolean);
+      const actions = hero.querySelector('.hero-actions');
+      const heroParagraphs = Array.from(hero.querySelectorAll(':scope > p'));
+
+      // Write all provided hero texts in order (Text1 -> erster Absatz, Text2 -> zweiter Absatz, ...)
+      heroTexts.forEach((txt, i) => {
+        if (heroParagraphs[i]) {
+          setMd(heroParagraphs[i], txt);
+        } else {
+          const p = document.createElement('p');
+          setMd(p, txt);
+          hero.insertBefore(p, actions || null);
+          heroParagraphs.push(p);
+        }
+      });
+
+      // Remove stale extra paragraphs so old/double text cannot persist
+      for (let i = heroTexts.length; i < heroParagraphs.length; i++) {
+        heroParagraphs[i].remove();
+      }
       if (ctaPrimary && c.hero.ctaPrimaryLabel) ctaPrimary.textContent = c.hero.ctaPrimaryLabel;
       if (ctaSecondary && c.hero.ctaSecondaryLabel) ctaSecondary.textContent = c.hero.ctaSecondaryLabel;
       const badge = document.querySelector('.hero-badge');
       if (badge && (c.hero.badgeTitle || c.hero.badgeText)) {
-        const t = c.hero.badgeTitle || '';
-        const x = c.hero.badgeText || '';
+        const t = escapeHtml(c.hero.badgeTitle || '');
+        const x = renderMarkdownLight(c.hero.badgeText || '');
         badge.innerHTML = `<strong>${t}</strong> ${x}`.trim();
       }
     }
@@ -33,12 +85,12 @@
       if (aboutLeftH2 && c.about.leftHeading) aboutLeftH2.textContent = c.about.leftHeading;
       const aboutLeftPs = document.querySelectorAll('.section-block .content-card p');
       (c.about.leftParagraphs || []).forEach((t, i) => {
-        if (aboutLeftPs[i] && t) aboutLeftPs[i].textContent = t;
+        if (aboutLeftPs[i] && t) setMd(aboutLeftPs[i], t);
       });
       const aboutRightH2 = document.querySelector('.content-card.alt .section-header h2');
       if (aboutRightH2 && c.about.rightHeading) aboutRightH2.textContent = c.about.rightHeading;
       const infoNote = document.querySelector('.content-card.alt .info-note');
-      if (infoNote && c.about.infoNote) infoNote.textContent = c.about.infoNote;
+      if (infoNote && c.about.infoNote) setMd(infoNote, c.about.infoNote);
     }
 
     if (c.approach) {
@@ -47,11 +99,40 @@
         const h2 = sec.querySelector('.section-header h2');
         const intro = sec.querySelector('.section-header p');
         if (h2 && c.approach.heading) h2.textContent = c.approach.heading;
-        if (intro && c.approach.intro) intro.textContent = c.approach.intro;
+        if (intro && c.approach.intro) setMd(intro, c.approach.intro);
         const cards = sec.querySelectorAll('.template-card');
-        if (cards[0]) { cards[0].querySelector('h3').textContent = c.approach.zielgruppeTitle || ''; const p=cards[0].querySelectorAll('p'); if(p[0]) p[0].textContent=c.approach.zielgruppeText1||''; if(p[1]) p[1].textContent=c.approach.zielgruppeText2||''; }
-        if (cards[1]) { cards[1].querySelector('h3').textContent = c.approach.arbeitsweiseTitle || ''; const p=cards[1].querySelectorAll('p'); if(p[0]) p[0].textContent=c.approach.arbeitsweiseText1||''; if(p[1]) p[1].textContent=c.approach.arbeitsweiseText2||''; }
-        if (cards[3]) { cards[3].querySelector('h3').textContent = c.approach.fastenTitle || ''; const p=cards[3].querySelectorAll('p'); if(p[0]) p[0].textContent=c.approach.fastenText1||''; if(p[1]) p[1].textContent=c.approach.fastenText2||''; }
+        if (cards[0]) {
+          cards[0].querySelector('h3').textContent = c.approach.zielgruppeTitle || '';
+          const p = cards[0].querySelectorAll('p');
+          if (p[0]) setMd(p[0], c.approach.zielgruppeText1 || '');
+          if (p[1]) setMd(p[1], c.approach.zielgruppeText2 || '');
+        }
+        if (cards[1]) {
+          cards[1].querySelector('h3').textContent = c.approach.arbeitsweiseTitle || '';
+          const p = cards[1].querySelectorAll('p');
+          const texts = [c.approach.arbeitsweiseText1, c.approach.arbeitsweiseText2, c.approach.arbeitsweiseText3].filter(Boolean);
+          p.forEach((node, i) => {
+            if (texts[i]) setMd(node, texts[i]);
+          });
+          for (let i = p.length; i < texts.length; i++) {
+            const newP = document.createElement('p');
+            setMd(newP, texts[i]);
+            cards[1].appendChild(newP);
+          }
+        }
+        if (cards[3]) {
+          cards[3].querySelector('h3').textContent = c.approach.fastenTitle || '';
+          const p = cards[3].querySelectorAll('p');
+          const texts = [c.approach.fastenText1, c.approach.fastenText2, c.approach.fastenText3, c.approach.fastenText4].filter(Boolean);
+          p.forEach((node, i) => {
+            if (texts[i]) setMd(node, texts[i]);
+          });
+          for (let i = p.length; i < texts.length; i++) {
+            const newP = document.createElement('p');
+            setMd(newP, texts[i]);
+            cards[3].appendChild(newP);
+          }
+        }
       }
     }
 
@@ -61,7 +142,7 @@
       const h2 = sec.querySelector('.section-header h2');
       const p = sec.querySelector('.section-header p');
       if (h2 && data.headline) h2.textContent = data.headline;
-      if (p && data.intro) p.textContent = data.intro;
+      if (p && data.intro) setMd(p, data.intro);
     }
     patchSection('angebot', c.angebot);
     patchSection('kurse', c.kurse);
@@ -75,8 +156,20 @@
         if (k && oc.kicker) k.textContent = oc.kicker;
         if (t && oc.title) t.textContent = oc.title;
         const ul = card.querySelector('.offer-list');
-        if (ul && Array.isArray(oc.items)) {
-          ul.innerHTML = oc.items.map(x => `<li>${x}</li>`).join('');
+        if (ul && Array.isArray(oc.items) && oc.items.length) {
+          ul.innerHTML = oc.items.map(x => `<li>${renderMarkdownLight(x)}</li>`).join('');
+        }
+
+        const textFields = [oc.text1, oc.text2, oc.text3, oc.text4].filter(Boolean);
+        if (textFields.length) {
+          ul?.remove();
+          let copy = card.querySelector('.offer-copy');
+          if (!copy) {
+            copy = document.createElement('div');
+            copy.className = 'offer-copy';
+            card.appendChild(copy);
+          }
+          copy.innerHTML = textFields.map(t => `<p>${renderMarkdownLight(t)}</p>`).join('');
         }
       });
     }
@@ -84,10 +177,22 @@
     if (c.hinweis) {
       const noteCard = document.querySelectorAll('#angebot .offer-card')[3];
       if (noteCard) {
-        const h3 = noteCard.querySelector('h3'); const ps = noteCard.querySelectorAll('p');
+        const h3 = noteCard.querySelector('h3');
         if (h3 && c.hinweis.title) h3.textContent = c.hinweis.title;
-        if (ps[0] && c.hinweis.text1) ps[0].textContent = c.hinweis.text1;
-        if (ps[1] && c.hinweis.text2) ps[1].textContent = c.hinweis.text2;
+
+        const legacyPs = noteCard.querySelectorAll('p');
+        const listItems = Array.isArray(c.hinweis.items) ? c.hinweis.items.filter(Boolean) : [];
+
+        if (listItems.length) {
+          legacyPs.forEach(p => p.remove());
+          let ul = noteCard.querySelector('.offer-list');
+          if (!ul) {
+            ul = document.createElement('ul');
+            ul.className = 'offer-list';
+            noteCard.appendChild(ul);
+          }
+          ul.innerHTML = listItems.map(x => `<li>${renderMarkdownLight(x)}</li>`).join('');
+        }
       }
     }
 
@@ -99,7 +204,7 @@
         if (k && cc.kicker) k.textContent = cc.kicker;
         if (t && cc.title) t.textContent = cc.title;
         const ul = card.querySelector('.meta-list');
-        if (ul && Array.isArray(cc.rows)) ul.innerHTML = cc.rows.map(r => `<li>${r}</li>`).join('');
+        if (ul && Array.isArray(cc.rows)) ul.innerHTML = cc.rows.map(r => `<li>${renderMarkdownLight(r)}</li>`).join('');
       });
     }
 
@@ -108,7 +213,7 @@
       if (card) {
         const h3 = card.querySelector('h3'); const p = card.querySelector('p');
         if (h3 && c.schnuppern.title) h3.textContent = c.schnuppern.title;
-        if (p && c.schnuppern.text) p.textContent = c.schnuppern.text;
+        if (p && c.schnuppern.text) setMd(p, c.schnuppern.text);
       }
     }
 
@@ -116,13 +221,28 @@
       const cards = document.querySelectorAll('#veranstaltungen .event-card');
       c.events.forEach((ev, i) => {
         const card = cards[i]; if (!card) return;
-        const kicker = card.querySelector('.card-kicker'); const title = card.querySelector('h3'); const text = card.querySelector('p');
+        const kicker = card.querySelector('.card-kicker'); const title = card.querySelector('h3');
         const li = card.querySelectorAll('.meta-list li');
         if (kicker && ev.kicker) kicker.textContent = ev.kicker;
         if (title && ev.title) title.textContent = ev.title;
-        if (text && ev.text) text.textContent = ev.text;
-        if (li[0] && ev.format) li[0].innerHTML = '<strong>Format</strong> ' + ev.format;
-        if (li[1] && ev.haeufigkeit) li[1].innerHTML = '<strong>Häufigkeit</strong> ' + ev.haeufigkeit;
+
+        const eventTexts = [ev.text, ev.text2, ev.text3].filter(Boolean);
+        const ps = card.querySelectorAll('p');
+        if (eventTexts.length) {
+          ps.forEach((node, idx) => {
+            if (eventTexts[idx]) setMd(node, eventTexts[idx]);
+          });
+          for (let j = ps.length; j < eventTexts.length; j++) {
+            const newP = document.createElement('p');
+            setMd(newP, eventTexts[j]);
+            const meta = card.querySelector('.meta-list');
+            card.insertBefore(newP, meta || null);
+          }
+        }
+
+        if (li[0] && ev.format) li[0].innerHTML = '<strong>Format</strong> ' + renderMarkdownLight(ev.format);
+        if (li[1] && ev.haeufigkeit) li[1].innerHTML = '<strong>Häufigkeit</strong> ' + renderMarkdownLight(ev.haeufigkeit);
+        if (li[2] && ev.termin) li[2].innerHTML = '<strong>Nächster Termin</strong> ' + renderMarkdownLight(ev.termin);
       });
     }
 
@@ -131,14 +251,24 @@
       if (sec) {
         const h2 = sec.querySelector('.contact-card h2'); const p = sec.querySelector('.contact-card p'); const wBtn = sec.querySelector('.contact-card .button');
         if (h2 && c.kontakt.headline) h2.textContent = c.kontakt.headline;
-        if (p && c.kontakt.intro) p.textContent = c.kontakt.intro;
+        if (p && c.kontakt.intro) setMd(p, c.kontakt.intro);
         if (wBtn && c.kontakt.whatsappLabel) wBtn.textContent = c.kontakt.whatsappLabel;
         const quote = sec.querySelector('.quote-card blockquote'); const quoteP = sec.querySelector('.quote-card p');
-        if (quote && c.kontakt.quote) quote.textContent = c.kontakt.quote;
-        if (quoteP && c.kontakt.quoteText) quoteP.textContent = c.kontakt.quoteText;
+        if (quote && c.kontakt.quote) setMd(quote, c.kontakt.quote);
+        if (quoteP && c.kontakt.quoteText) setMd(quoteP, c.kontakt.quoteText);
         const cards = sec.querySelectorAll('.template-grid .template-card');
-        if (cards[0]) { cards[0].querySelector('h3').textContent = c.kontakt.statusTitle || ''; const ps=cards[0].querySelectorAll('p'); if(ps[0]) ps[0].textContent=c.kontakt.statusText1||''; if(ps[1]) ps[1].textContent=c.kontakt.statusText2||''; }
-        if (cards[1]) { cards[1].querySelector('h3').textContent = c.kontakt.impulsTitle || ''; const ps=cards[1].querySelectorAll('p'); if(ps[0]) ps[0].textContent=c.kontakt.impulsText1||''; if(ps[1]) ps[1].textContent=c.kontakt.impulsText2||''; }
+        if (cards[0]) {
+          cards[0].querySelector('h3').textContent = c.kontakt.statusTitle || '';
+          const ps = cards[0].querySelectorAll('p');
+          if (ps[0]) setMd(ps[0], c.kontakt.statusText1 || '');
+          if (ps[1]) setMd(ps[1], c.kontakt.statusText2 || '');
+        }
+        if (cards[1]) {
+          cards[1].querySelector('h3').textContent = c.kontakt.impulsTitle || '';
+          const ps = cards[1].querySelectorAll('p');
+          if (ps[0]) setMd(ps[0], c.kontakt.impulsText1 || '');
+          if (ps[1]) setMd(ps[1], c.kontakt.impulsText2 || '');
+        }
       }
     }
 

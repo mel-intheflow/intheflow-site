@@ -30,6 +30,10 @@ collections:
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Text 1", name: "text1", widget: "text" }
               - { label: "Text 2", name: "text2", widget: "text" }
+              - { label: "Text 3", name: "text3", widget: "text", required: false }
+              - { label: "Text 4", name: "text4", widget: "text", required: false }
+              - { label: "Text 5", name: "text5", widget: "text", required: false }
+              - { label: "Text 6", name: "text6", widget: "text", required: false }
               - { label: "CTA Primär", name: "ctaPrimaryLabel", widget: "string" }
               - { label: "CTA Sekundär", name: "ctaSecondaryLabel", widget: "string" }
               - { label: "Badge Titel", name: "badgeTitle", widget: "string" }
@@ -56,9 +60,12 @@ collections:
               - { label: "Arbeitsweise Titel", name: "arbeitsweiseTitle", widget: "string" }
               - { label: "Arbeitsweise Text 1", name: "arbeitsweiseText1", widget: "text" }
               - { label: "Arbeitsweise Text 2", name: "arbeitsweiseText2", widget: "text" }
+              - { label: "Arbeitsweise Text 3", name: "arbeitsweiseText3", widget: "text", required: false }
               - { label: "Fasten Titel", name: "fastenTitle", widget: "string" }
               - { label: "Fasten Text 1", name: "fastenText1", widget: "text" }
               - { label: "Fasten Text 2", name: "fastenText2", widget: "text" }
+              - { label: "Fasten Text 3", name: "fastenText3", widget: "text", required: false }
+              - { label: "Fasten Text 4", name: "fastenText4", widget: "text", required: false }
 
           - label: "Angebot Header"
             name: "angebot"
@@ -73,15 +80,18 @@ collections:
             fields:
               - { label: "Kicker", name: "kicker", widget: "string" }
               - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Items", name: "items", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+              - { label: "Items", name: "items", widget: "list", required: false, field: { label: "Item", name: "item", widget: "string" } }
+              - { label: "Text 1", name: "text1", widget: "text", required: false }
+              - { label: "Text 2", name: "text2", widget: "text", required: false }
+              - { label: "Text 3", name: "text3", widget: "text", required: false }
+              - { label: "Text 4", name: "text4", widget: "text", required: false }
 
           - label: "Hinweiskarte"
             name: "hinweis"
             widget: "object"
             fields:
               - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Text 1", name: "text1", widget: "text" }
-              - { label: "Text 2", name: "text2", widget: "text" }
+              - { label: "Items", name: "items", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
 
           - label: "Kurse Header"
             name: "kurse"
@@ -119,9 +129,12 @@ collections:
             fields:
               - { label: "Kicker", name: "kicker", widget: "string" }
               - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Text 1", name: "text", widget: "text" }
+              - { label: "Text 2", name: "text2", widget: "text", required: false }
+              - { label: "Text 3", name: "text3", widget: "text", required: false }
               - { label: "Format", name: "format", widget: "string" }
               - { label: "Häufigkeit", name: "haeufigkeit", widget: "string" }
+              - { label: "Nächster Termin", name: "termin", widget: "string", required: false }
 
           - label: "Kontakt"
             name: "kontakt"

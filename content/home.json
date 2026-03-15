@@ -18,8 +18,10 @@
   },
   "hinweis": {
     "title": "Wichtige Fasten-Information",
-    "text1": "Bei langfristigen oder chronischen Erkrankungen, Erbkrankheiten oder dauerhafter Medikamenteneinnahme ist vor dem Fasten unbedingt ärztlicher Rat einzuholen.",
-    "text2": "Nicht fasten sollten Schwangere, Stillende, Jugendliche und Kinder. Eine Fastenkur ersetzt keine medizinische Behandlung."
+    "items": [
+      "Bei langfristigen oder chronischen Erkrankungen, Erbkrankheiten oder dauerhafter Medikamenteneinnahme ist vor dem Fasten unbedingt ärztlicher Rat einzuholen.",
+      "Nicht fasten sollten Schwangere, Stillende, Jugendliche und Kinder. Eine Fastenkur ersetzt keine medizinische Behandlung."
+    ]
   },
   "offerCards": [
     {
@@ -33,7 +35,11 @@
         "Firmenyoga sowie Seminare und Workshops",
         "Soundhealing mit Handpan, Klangschalen und mehr",
         "Ätherische Öle von Feeling begleiten die Yogakurse"
-      ]
+      ],
+      "text1": "",
+      "text2": "",
+      "text3": "",
+      "text4": ""
     },
     {
       "kicker": "Yoga Basis",
@@ -43,19 +49,20 @@
         "5er-Block mit 5 individuellen Terminen innerhalb von 5 bis 6 Wochen",
         "Möglich für 1 bis 3 Personen",
         "Bei anschließendem Kauf eines 10er-Blocks einmalig 13 Einheiten zum Preis von 10, danach 10 plus 1"
-      ]
+      ],
+      "text1": "",
+      "text2": "",
+      "text3": "",
+      "text4": ""
     },
     {
       "kicker": "Fasten",
       "title": "Yoga und Fastenbegleitung Einzeln oder als Retreat",
-      "items": [
-        "Die persönliche Fastenbegleitung richtet sich an Menschen im Raum Weiz und Gleisdorf, die Yoga, individuelle Fastenbegleitung und ganzheitliche Gesundheitsimpulse in einer ruhigen, persönlichen Atmosphäre suchen. - Dies ist teilweise oder auf Wunsch auch komplett online möglich! Während der definierten Fastenzeit, kostenlose Teilnahme an allen Yogakursen in Präsenz oder online, sowie Begleitung per WhatsApp während der definierten Fastenzeit.",
-        "Die Fastenbegleitung als Retreat findet jährlich im Frühjahr, in Zusammenarbeit mit Kräuterpädagogin Sabrina Lukas (www.natursinn.at) auf der Alm in Glashütten statt. Dort durften wir seit 2023 schon viele tolle Menschen kennenlernen und begleiten. ",
-        "Bei beiden Varianten gibt es fundiertes Fastenwissen als Vortrag und schriftliches Handout",
-        "Außerdem Vor- und Nachbereitung für die Fastentage",
-        "Eine Vorbereitungsliste, Einkaufsliste und Hilfsmittel",
-        "Reflexionsblätter für jeden Fastentag"
-      ]
+      "items": [],
+      "text1": "Die persönliche Fastenbegleitung richtet sich an Menschen im Raum Weiz und Gleisdorf, die Yoga, individuelle Fastenbegleitung und ganzheitliche Gesundheitsimpulse in einer ruhigen, persönlichen Atmosphäre suchen. - Dies ist teilweise oder auf Wunsch auch komplett online möglich! Während der definierten Fastenzeit, kostenlose Teilnahme an allen Yogakursen in Präsenz oder online, sowie Begleitung per WhatsApp während der definierten Fastenzeit.",
+      "text2": "Die Fastenbegleitung als Retreat findet jährlich im Frühjahr, in Zusammenarbeit mit Kräuterpädagogin Sabrina Lukas (www.natursinn.at) auf der Alm in Glashütten statt. Dort durften wir seit 2023 schon viele tolle Menschen kennenlernen und begleiten. ",
+      "text3": "Bei beiden Varianten gibt es fundiertes Fastenwissen als Vortrag und schriftliches Handout",
+      "text4": "Außerdem Vor- und Nachbereitung für die Fastentage"
     }
   ],
   "brand": {
@@ -111,7 +118,10 @@
     "fastenTitle": "Fastenbegleitung mit Struktur und individueller Begleitung",
     "zielgruppeText2": "Besonders angesprochen sind Teilnehmerinnen und Teilnehmer aus dem Raum Weiz und Gleisdorf, die in einer kleinen, persönlichen Gruppe üben möchten.",
     "fastenText1": "- \"Geh du vor\", sagt die Seele zum Körper, \"auf mich hört er nicht\". - Ulrich Schaffer\n\nDie Fastenbegleitung richtet sich an Menschen, die Körper und Geist bewusst entlasten und diesen Prozess mit Yoga achtsam unterstützen möchten.\n",
-    "arbeitsweiseTitle": "Was macht meine Begleitung besonders?"
+    "arbeitsweiseTitle": "Was macht meine Begleitung besonders?",
+    "arbeitsweiseText3": "",
+    "fastenText3": "",
+    "fastenText4": ""
   },
   "about": {
     "leftHeading": "Yoga-Erfahrung, Ausbildung und ganzheitliche Begleitung",
@@ -129,21 +139,30 @@
       "title": "108 Sonnengrüße",
       "text": "Dieses Format findet einmal jährlich im Jänner statt und ist ein kraftvoller & bewusster Start ins neue Jahr. ",
       "format": "Online (Zoom)",
-      "haeufigkeit": "Einmal pro Jahr"
+      "haeufigkeit": "Einmal pro Jahr",
+      "text2": "",
+      "text3": "",
+      "termin": "Auf Anfrage"
     },
     {
       "kicker": "Retreat",
       "title": "Yoga & Fasten Retreat",
       "text": "Einmal im Jahr gibt es ein vertiefendes Retreat-Format mit Yoga, Fastenimpulsen und persönlicher Begleitung.",
       "format": "Vor Ort, Glashütten, 8530 Gressenberg",
-      "haeufigkeit": "Einmal pro Jahr"
+      "haeufigkeit": "Einmal pro Jahr",
+      "text2": "",
+      "text3": "",
+      "termin": "Auf Anfrage"
     },
     {
       "kicker": "Yogaabend mit Pflanzenwissen - Deep Relax",
       "title": "Yoga mit Sound & Düften",
       "text": "Dieses Jahres-Special verbindet sanfte Yogapraxis mit Klang und Themenbezogenes Wissen über Pflanzen und deren ausgewählten ätherischen Ölen.\nIn Zusammenarbeit mit Kräuterpädagogin Sabrina Lukas (www.natur-sinn.at)\nDauer ca. 2,5 Stunden\nDatum und Einzelheiten folgen.",
       "format": "Vor Ort, Hofstätten a.d. Raab, Feuerwehrhaus",
-      "haeufigkeit": "Einmal pro Jahr"
+      "haeufigkeit": "Einmal pro Jahr",
+      "text2": "",
+      "text3": "",
+      "termin": "Auf Anfrage"
     }
   ],
   "kurse": {
@@ -158,7 +177,11 @@
     "ctaPrimaryLabel": "Kurse ansehen",
     "ctaSecondaryLabel": "Kontaktiere mich gerne",
     "badgeTitle": "Raum Weiz und Gleisdorf",
-    "badgeText": "Yoga in Kleingruppen, Einzelstunden, Online-Angebote, Retreats, Fastenbegleitung, Soundhealing und Schwangerschaftsyoga."
+    "badgeText": "Yoga in Kleingruppen, Einzelstunden, Online-Angebote, Retreats, Fastenbegleitung, Soundhealing und Schwangerschaftsyoga.",
+    "text3": "",
+    "text4": "",
+    "text5": "",
+    "text6": ""
   },
   "footer": {
     "copyright": "© in the flow"

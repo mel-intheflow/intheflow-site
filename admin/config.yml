@@ -50,6 +50,12 @@ collections:
             fields:
               - { label: "Headline", name: "heading", widget: "string" }
               - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Eindrücke Karte"
+                name: "impressions"
+                widget: "object"
+                fields:
+                  - { label: "Kicker", name: "kicker", widget: "string", required: false }
+                  - { label: "Titel", name: "title", widget: "string" }
               - label: "Bereiche"
                 name: "cards"
                 widget: "list"

@@ -115,6 +115,13 @@
           const legacyCards = Array.from(grid.querySelectorAll('.template-card'));
           const imageCard = legacyCards.find(card => card.querySelector('.template-image'));
 
+          if (imageCard && c.approach.impressions) {
+            const k = imageCard.querySelector('.card-kicker');
+            const t = imageCard.querySelector('h3');
+            if (k && c.approach.impressions.kicker) k.textContent = c.approach.impressions.kicker;
+            if (t && c.approach.impressions.title) t.textContent = c.approach.impressions.title;
+          }
+
           const legacyData = [
             {
               kicker: 'Zielgruppe',
@@ -139,7 +146,7 @@
             if (card !== imageCard) card.remove();
           });
 
-          dynamicCards.forEach((entry) => {
+          const buildCard = (entry) => {
             const card = document.createElement('article');
             card.className = 'template-card';
             const kicker = entry.kicker || '';
@@ -151,8 +158,24 @@
               setMd(p, txt);
               card.appendChild(p);
             });
-            grid.insertBefore(card, imageCard || null);
-          });
+            return card;
+          };
+
+          if (imageCard && dynamicCards.length) {
+            const split = Math.max(dynamicCards.length - 1, 0);
+            const beforeImage = dynamicCards.slice(0, split);
+            const afterImage = dynamicCards.slice(split);
+
+            beforeImage.forEach(entry => grid.insertBefore(buildCard(entry), imageCard));
+            let anchor = imageCard.nextSibling;
+            afterImage.forEach(entry => {
+              const node = buildCard(entry);
+              grid.insertBefore(node, anchor);
+              anchor = node.nextSibling;
+            });
+          } else {
+            dynamicCards.forEach(entry => grid.appendChild(buildCard(entry)));
+          }
         }
       }
     }

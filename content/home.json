@@ -6,7 +6,7 @@
     "quoteText": "Das erste \"Danke\", der nach jeder Einheit abschließenden Dankbarkeitsübung, gehört alleine dir, aus Respekt und Demut, vor deinem ganz persönlichem Lebensweg.",
     "intro": "Gemeinsam können wir gerne ein Konzept für dich, eine Gruppe, fürs Firmenyoga oder für Fastenbegleitung erarbeiten.",
     "statusText1": "Ob aktuell freie Plätze verfügbar sind, erfährst du am schnellsten per WhatsApp.",
-    "statusText2": "Ein Einstieg ist als Schnuppereinheit oder über den Yoga-Basis-Block möglich.",
+    "statusText2": "Ein Einstieg ist als kostenlose Schnuppereinheit oder über den Yoga-Basis-Block möglich.",
     "impulsText1": "Wenn du spürst, dass dir Yoga, Fastenbegleitung oder ein ruhiger Ausgleich guttun würde, schreib mir einfach per WhatsApp.",
     "headline": "Kontakt",
     "impulsText2": "Ich freue mich auf deine Nachricht.",
@@ -19,9 +19,9 @@
   "hinweis": {
     "title": "Wichtige Fasten-Information",
     "items": [
-      "Hier ist vor dem Fasten unbedingt ärztlicher Rat einzuholen:",
+      "**Hier ist vor dem Fasten unbedingt ärztlicher Rat einzuholen:**",
       "Bei langfristigen oder chronischen Erkrankungen, Erbkrankheiten und/oder dauerhafter Medikamenteneinnahme.",
-      "Nicht fasten sollten: ",
+      "**Nicht fasten sollten:**",
       "Schwangere, Stillende, Jugendliche und Kinder sowie Menschen mit einer Essstörung.",
       "Eine Fastenkur ersetzt keine medizinische Behandlung."
     ]
@@ -69,8 +69,8 @@
       "text3": "Bei beiden Varianten gibt es fundiertes Fastenwissen als Vortrag und schriftliches Handout",
       "text4": "Außerdem Vor- und Nachbereitung für die Fastentage",
       "paragraphs": [
-        "Die persönliche Fastenbegleitung richtet sich an Menschen im Raum Weiz und Gleisdorf, die Yoga, individuelle Fastenbegleitung und ganzheitliche Gesundheitsimpulse in einer ruhigen, persönlichen Atmosphäre suchen. - Dies ist teilweise oder auf Wunsch auch komplett online möglich! Während der definierten Fastenzeit, kostenlose Teilnahme an allen Yogakursen in Präsenz oder online, sowie Begleitung per WhatsApp während der definierten Fastenzeit.",
-        "Die Fastenbegleitung als Retreat findet jährlich im Frühjahr, in Zusammenarbeit mit Kräuterpädagogin Sabrina Lukas [www.natursinn.at] auf der Alm in Glashütten statt. \nDort durften wir seit 2023 schon viele tolle Menschen kennenlernen und begleiten. ",
+        "**Die persönliche Fastenbegleitung** richtet sich an Menschen im Raum Weiz und Gleisdorf, die Yoga, individuelle Fastenbegleitung und ganzheitliche Gesundheitsimpulse in einer ruhigen, persönlichen Atmosphäre suchen. - Dies ist teilweise oder auf Wunsch auch komplett online möglich! Während der definierten Fastenzeit, kostenlose Teilnahme an allen Yogakursen in Präsenz oder online, sowie Begleitung per WhatsApp während der definierten Fastenzeit.",
+        "**Die Fastenbegleitung als Retreat** findet jährlich im Frühjahr, in Zusammenarbeit mit Kräuterpädagogin Sabrina Lukas [www.natur-sinn.at] auf der Alm in Glashütten statt. \nDort durften wir seit 2023 schon viele tolle Menschen kennenlernen und begleiten. ",
         "Bei beiden Varianten gibt es fundiertes Fastenwissen als Vortrag und schriftliches Handout",
         "Außerdem Vor- und Nachbereitung für die Fastentage"
       ]
@@ -85,7 +85,7 @@
       "title": "Zoom Kurs",
       "rows": [
         "Ort: Online mit Zoom App",
-        "Zeit: wieder verfügbar ab 2027",
+        "**Zeit: wieder verfügbar ab 2027**",
         "Info: Online-Kurs á 60 min.  Den Link zum Einloggen gibt es auf Anfrage."
       ]
     },
@@ -94,7 +94,7 @@
       "title": "Feuerwehrhaus, Mehrzweckraum",
       "rows": [
         "Ort: Hofstätten a.d. Raab, Feuerwehrhaus",
-        "Zeit: Mittwoch 18:30 bis 19:45 Uhr",
+        "Zeit: **Mittwoch 18:30 bis 19:45 Uhr**",
         "Info: Feiertage entfallen. Kleine Sommer- und Winterpause"
       ]
     },
@@ -103,7 +103,7 @@
       "title": "Gemeindezentrum Mortantsch",
       "rows": [
         "Ort: Weiz/Mortantsch, Gemeindezentrum",
-        "Zeit: Dienstag von 18:00 bis 19:15 Uhr",
+        "Zeit: **Dienstag von 18:00 bis 19:15 Uhr**",
         "Info: Feiertage entfallen. Kleine Sommer- und Winterpause",
         "Saisonal: Outdoor Yoga von Juni bis August, Indoor Yoga von September bis Mai"
       ]
@@ -197,30 +197,30 @@
     {
       "kicker": "Online Special",
       "title": "108 Sonnengrüße",
-      "text": "Dieses Format findet einmal jährlich im Jänner statt und ist ein kraftvoller & bewusster Start ins neue Jahr. Abgesehen von der spirituellen Bedeutung der 108 hat diese Bewegungsabfolge eine enorme Kraft und Wirkung auf Körper, Geist und Seele.",
+      "text": "Dieses Format findet einmal jährlich im Jänner statt und ist ein kraftvoller & bewusster Start ins neue Jahr. Abgesehen von der spirituellen Bedeutung der **108** hat diese Bewegungsabfolge eine enorme Kraft und Wirkung auf Körper, Geist und Seele.",
       "format": "Online (Zoom)",
       "haeufigkeit": "Einmal pro Jahr",
-      "text2": "Der Sonnengruß ist ein Gebet an die Sonne, das Feuer und das Licht, welches wir mit unserem Körper darstellen. Es ist eine Meditation in Bewegung in der du durch verschiedene Schichten deiner selbst tauchst.\nEs hilft dir enorm wieder in deine Mitte zu kommen und auch dein gesamtes Immunsystem sowie die körperliche Gesundheit profitieren davon. Dabei es es nicht wichtig, ob du alle 108 mitmachst oder nicht. ",
+      "text2": "Der Sonnengruß ist ein Gebet an die Sonne, das Feuer und das Licht, welches wir mit unserem Körper darstellen. Es ist eine **Meditation in Bewegung** in der du durch verschiedene Schichten deiner selbst tauchst.\nEs hilft dir enorm wieder in deine Mitte zu kommen und auch **dein gesamtes Immunsystem sowie die körperliche Gesundheit profitieren davon**. Dabei es es nicht wichtig, ob du alle 108 mitmachst oder nicht. ",
       "text3": "Nachdem wir uns mit 8 langsamen Sonnengrüßen aufgewärmt haben, gehen wir in 10er Schritten vor und du legst Pausen ein wann du sie brauchst. Ich gebe euch eine leichte und eine fortgeschrittene Variante an die Hand, zwischen denen ihr immer wieder aufs neue wählen könnt.",
       "termin": "Sonntag, 3.Jänner 2027"
     },
     {
       "kicker": "Retreat",
       "title": "Yoga & Fasten Retreat",
-      "text": "Einmal im Jahr gibt es seit 2023, ein vertiefendes Retreat-Format mit Yoga, Fastenimpulsen und persönlicher Begleitung.",
+      "text": "Einmal im Jahr gibt es seit 2023, ein vertiefendes Yoga & Fasten Retreat mit Pflanzenwissen und ganzheitlicher Begleitung.",
       "format": "Vor Ort, Glashütten, 8530 Gressenberg",
       "haeufigkeit": "Einmal pro Jahr",
-      "text2": "Das erwartet dich:\nViel Achtsamkeit und Bewusstsein, Körper & Geist reinigen und entgiften, die Ruhe, Natur und Luft der Alm genießen, tägliche Reflexion, Zeit für dich & Rückzugsmöglichkeiten und viel fundiertes Wissen über Fasten. \nWir werden uns von grünen Smoothies, Basensuppen und Tees ernähren.\nDen Prozess des Fastens begleiten wir mit Kräutern & Pflanzen, natürlichen Hilfsmitteln (z.B Zeolith) sowie ätherischen Ölen und täglicher Bewegung an der frischen Luft.\n\nMit sanftem Yoga, Meditation und Soundhealing, werden wir Fasten zum Wohlfühlen erleben.",
+      "text2": "**Das erwartet dich:**\nViel Achtsamkeit und Bewusstsein, Körper & Geist reinigen und entgiften, die Ruhe, Natur und Luft der Alm genießen, tägliche Reflexion, Zeit für dich & Rückzugsmöglichkeiten und viel fundiertes Wissen über Fasten. \nWir werden uns von **grünen Smoothies, Basensuppen und Tees** ernähren.\nDen Prozess des Fastens begleiten wir mit Kräutern & Pflanzen, natürlichen Hilfsmitteln (z.B Zeolith) sowie ätherischen Ölen und täglicher Bewegung an der frischen Luft.\n\n**Mit sanftem Yoga, Meditation und Soundhealing, werden wir Fasten zum Wohlfühlen erleben.**",
       "text3": "Kräuterpädagogin: Sabrina Lukas [www.natur-sinn.at]\nYoga, Sound & Fastenbegleitung: Melanie Spielhofer",
       "termin": "März 2027"
     },
     {
       "kicker": "Yogaabend mit Pflanzenwissen - Deep Relax",
       "title": "Yoga mit Sound & Düften",
-      "text": "Dieses Jahres-Special verbindet sanfte Yogapraxis mit Klang und Themenbezogenes Wissen über Pflanzen und deren ausgewählten ätherischen Ölen.\nIn Zusammenarbeit mit Kräuterpädagogin Sabrina Lukas [www.natur-sinn.at]\n",
+      "text": "Dieses Jahres-Special verbindet sanfte Yogapraxis mit Klang und Themenbezogenes Wissen über Pflanzen und deren ausgewählten ätherischen Ölen.\n\nIn Zusammenarbeit mit Kräuterpädagogin Sabrina Lukas [www.natur-sinn.at]\n",
       "format": "Vor Ort, Hofstätten a.d. Raab, Feuerwehrhaus",
       "haeufigkeit": "Einmal pro Jahr",
-      "text2": "Dauer ca. 2,5 Stunden\nDatum und Einzelheiten folgen.",
+      "text2": "Dauer ca. 3 Stunden\nDatum und Einzelheiten folgen.",
       "text3": "",
       "termin": "Herbst 2026"
     }

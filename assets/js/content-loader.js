@@ -205,8 +205,11 @@
           ul.innerHTML = listItems.map(x => `<li>${renderMarkdownLight(x)}</li>`).join('');
         }
 
-        const textFields = [oc.text1, oc.text2, oc.text3, oc.text4].filter(Boolean);
-        if (textFields.length) {
+        const paragraphList = Array.isArray(oc.paragraphs) ? oc.paragraphs.filter(Boolean) : [];
+        const legacyTextFields = [oc.text1, oc.text2, oc.text3, oc.text4].filter(Boolean);
+        const textBlocks = paragraphList.length ? paragraphList : legacyTextFields;
+
+        if (textBlocks.length) {
           ul?.remove();
           let copy = card.querySelector('.offer-copy');
           if (!copy) {
@@ -214,8 +217,7 @@
             copy.className = 'offer-copy';
             card.appendChild(copy);
           }
-          const combined = [...textFields, ...listItems];
-          copy.innerHTML = combined.map(t => `<p>${renderMarkdownLight(t)}</p>`).join('');
+          copy.innerHTML = textBlocks.map(t => `<p>${renderMarkdownLight(t)}</p>`).join('');
         }
       });
     }

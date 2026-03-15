@@ -1,0 +1,15 @@
+# Cache fix for Beta -> Root transition
+# Keep HTML documents fresh so latest asset references are loaded.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html?|HTML?)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+
+  <Files "index.html">
+    Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </Files>
+</IfModule>

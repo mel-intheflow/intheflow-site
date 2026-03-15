@@ -1,4 +1,4 @@
-name: Deploy beta to FTP
+name: Deploy root to FTP
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: FTP Deploy to /beta
+      - name: FTP Deploy to /
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -20,7 +20,7 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./
-          server-dir: ./beta/
+          server-dir: ./
           exclude: |
             **/.git*
             **/.git*/**

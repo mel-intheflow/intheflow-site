@@ -28,12 +28,7 @@ collections:
             fields:
               - { label: "Top-Zitat", name: "eyebrow", widget: "string" }
               - { label: "Headline", name: "headline", widget: "string" }
-              - { label: "Text 1", name: "text1", widget: "text" }
-              - { label: "Text 2", name: "text2", widget: "text" }
-              - { label: "Text 3", name: "text3", widget: "text", required: false }
-              - { label: "Text 4", name: "text4", widget: "text", required: false }
-              - { label: "Text 5", name: "text5", widget: "text", required: false }
-              - { label: "Text 6", name: "text6", widget: "text", required: false }
+              - { label: "Absätze", name: "paragraphs", widget: "list", field: { label: "Absatz", name: "p", widget: "text" } }
               - { label: "CTA Primär", name: "ctaPrimaryLabel", widget: "string" }
               - { label: "CTA Sekundär", name: "ctaSecondaryLabel", widget: "string" }
               - { label: "Badge Titel", name: "badgeTitle", widget: "string" }
@@ -43,9 +38,10 @@ collections:
             name: "about"
             widget: "object"
             fields:
-              - { label: "Linke Headline", name: "leftHeading", widget: "string" }
-              - { label: "Linke Absätze", name: "leftParagraphs", widget: "list", field: { label: "Absatz", name: "p", widget: "text" } }
-              - { label: "Rechte Headline", name: "rightHeading", widget: "string" }
+              - { label: "Werdegang Headline", name: "leftHeading", widget: "string" }
+              - { label: "Werdegang Absätze", name: "leftParagraphs", widget: "list", field: { label: "Absatz", name: "p", widget: "text" } }
+              - { label: "Qualifikation Headline", name: "rightHeading", widget: "string" }
+              - { label: "Zertifikate", name: "certificates", widget: "list", fields: [{ label: "Titel", name: "title", widget: "string" }, { label: "Link", name: "href", widget: "string" }] }
               - { label: "Info Note", name: "infoNote", widget: "text" }
 
           - label: "Ganzheitlicher Ansatz"
@@ -54,18 +50,13 @@ collections:
             fields:
               - { label: "Headline", name: "heading", widget: "string" }
               - { label: "Intro", name: "intro", widget: "text" }
-              - { label: "Zielgruppe Titel", name: "zielgruppeTitle", widget: "string" }
-              - { label: "Zielgruppe Text 1", name: "zielgruppeText1", widget: "text" }
-              - { label: "Zielgruppe Text 2", name: "zielgruppeText2", widget: "text" }
-              - { label: "Arbeitsweise Titel", name: "arbeitsweiseTitle", widget: "string" }
-              - { label: "Arbeitsweise Text 1", name: "arbeitsweiseText1", widget: "text" }
-              - { label: "Arbeitsweise Text 2", name: "arbeitsweiseText2", widget: "text" }
-              - { label: "Arbeitsweise Text 3", name: "arbeitsweiseText3", widget: "text", required: false }
-              - { label: "Fasten Titel", name: "fastenTitle", widget: "string" }
-              - { label: "Fasten Text 1", name: "fastenText1", widget: "text" }
-              - { label: "Fasten Text 2", name: "fastenText2", widget: "text" }
-              - { label: "Fasten Text 3", name: "fastenText3", widget: "text", required: false }
-              - { label: "Fasten Text 4", name: "fastenText4", widget: "text", required: false }
+              - label: "Bereiche"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Kicker", name: "kicker", widget: "string", required: false }
+                  - { label: "Titel", name: "title", widget: "string" }
+                  - { label: "Absätze", name: "paragraphs", widget: "list", field: { label: "Absatz", name: "p", widget: "text" } }
 
           - label: "Angebot Header"
             name: "angebot"

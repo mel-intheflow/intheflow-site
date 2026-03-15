@@ -121,7 +121,33 @@
     "arbeitsweiseTitle": "Was macht meine Begleitung besonders?",
     "arbeitsweiseText3": "",
     "fastenText3": "",
-    "fastenText4": ""
+    "fastenText4": "",
+    "cards": [
+      {
+        "kicker": "Zielgruppe",
+        "title": "Für wen ist mein Yoga geeignet?",
+        "paragraphs": [
+          "Meine Kurse sind für Menschen geeignet, die sich im Alltag eine bewusste Pause wünschen — egal ob Einsteiger oder Wiedereinsteiger.",
+          "Besonders angesprochen sind Teilnehmerinnen und Teilnehmer aus dem Raum Weiz und Gleisdorf, die in einer kleinen, persönlichen Gruppe üben möchten."
+        ]
+      },
+      {
+        "kicker": "Arbeitsweise",
+        "title": "Was macht meine Begleitung besonders?",
+        "paragraphs": [
+          "In meinen Einheiten verwende ich gerne Kartendecks, hochwertige ätherische Öle, Räucherwerk und Musik, (bei Seminaren und Retreats auch Handpan, Klangschalen uvm.).",
+          "Durch Atembewusstsein, dem Wechsel aus Flows und Asanas sowie Mediation, fließen wir am Ende der Stunde entspannt in die beliebte Schlussentspannung - Yoga Nidra. "
+        ]
+      },
+      {
+        "kicker": "Fastenbegleitung",
+        "title": "Fastenbegleitung mit Struktur und individueller Begleitung",
+        "paragraphs": [
+          "- \"Geh du vor\", sagt die Seele zum Körper, \"auf mich hört er nicht\". - Ulrich Schaffer\n\nDie Fastenbegleitung richtet sich an Menschen, die Körper und Geist bewusst entlasten und diesen Prozess mit Yoga achtsam unterstützen möchten.\n",
+          "Dazu gehören individuelles Vorgehen, hilfreiche Unterlagen und auf Wunsch persönliche Begleitung während der definierten Zeit.\nFasten beschränkt sich nicht auf den Verzicht. Bei mir wird Fasten zu einer guten, wertvollen ganzheitlichen Erinnerung. Nämlich GEMEINSAM MIT dem Körper (nicht dagegen) und dem einbeziehen von Geist und Seele. Denn zu jedem körperlichen \"Knoten\" gehört auch ein seelischer."
+        ]
+      }
+    ]
   },
   "about": {
     "leftHeading": "Yoga-Erfahrung, Ausbildung und ganzheitliche Begleitung",
@@ -131,7 +157,21 @@
       "2020 kam ein Online-Studium im Bereich Gesundheitsvorsorge, Gesundheitserhaltung und Fastenbegleitung hinzu. 2022 begann außerdem die Ausbildung zur Ganzheitlichen Gesundheitsberaterin nach Dr. Rüdiger Dahlke."
     ],
     "rightHeading": "Zertifikate für Yoga, Fasten und Gesundheit",
-    "infoNote": "Yoga hilft enorm dabei, sich in seiner Mitte wiederzufinden. Es kann viel Klarheit und Selbstsicherheit ins Leben bringen."
+    "infoNote": "Yoga hilft enorm dabei, sich in seiner Mitte wiederzufinden. Es kann viel Klarheit und Selbstsicherheit ins Leben bringen.",
+    "certificates": [
+      {
+        "title": "TriYoga Zertifikat",
+        "href": "zertifikate/TriyogaZertifikat.pdf"
+      },
+      {
+        "title": "Gesundheitsstudium und Fastenbegleitung",
+        "href": "zertifikate/Zertifikat_Gesundheitsvorsorge_Gesundheitserhaltung__Fastenbegleitung.pdf"
+      },
+      {
+        "title": "Ganzheitliche Gesundheit nach Dr. Rüdiger Dahlke",
+        "href": "zertifikate/Zertifikat_Ganzheitliche_Gesundheit_Dr_Ruediger_Dahlke.pdf"
+      }
+    ]
   },
   "events": [
     {
@@ -181,7 +221,11 @@
     "text3": "",
     "text4": "",
     "text5": "",
-    "text6": ""
+    "text6": "",
+    "paragraphs": [
+      "Das Leben - ist nicht linear, es verläuft in Wellen. Yoga begleitet mich seit vielen Jahren als kraftspendende Quelle durch Transformation, Selbstliebe, Dankbarkeit und ein tiefes intuitives Spüren für Körper, Geist und Seele.\n\nIch bin - Melanie. Yogalehrerin, Fastenbegleiterin, glückliche Ehefrau und Mama :) und noch vieles mehr.\n\nGlück - Zum Glück gehören nicht die Umstände, sondern die Dankbarkeit für das, was bereits da ist und selbstverständlich erscheint, die unzähligen Perspektiven & Möglichkeiten - das ist ein Teil davon, was in uns Glück auslöst.",
+      "Yoga bei mir ist - bodenständig, respektvoll, kraftvoll, bewusst und vor allem entspannend.\n\nIn meinen Einheiten verwende ich gerne Kartendecks, hochwertige ätherische Öle, Räucherwerk und Musik, (bei Seminaren und Retreats auch Handpan, Klangschalen uvm.).\nDurch Atembewusstsein, dem Wechsel aus Flows und Asanas sowie Mediation fließen wie am Ende der Stunde entspannt in die beliebte Schlussentspannung - Yoga Nidra. \n\nRetreats - Ergänzend begleite ich Menschen bei Fastenprozessen und in besonderen Veränderungsphasen. Ich leite Yoga Retreats und Seminare/Yoga - Themenabende, in wertvoller Zusammenarbeit mit großartigen, bereichernden Frauen."
+    ]
   },
   "footer": {
     "copyright": "© in the flow"

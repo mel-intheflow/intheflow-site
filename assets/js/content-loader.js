@@ -50,7 +50,9 @@
       const ctaSecondary = hero.querySelector('.hero-actions .link-pill');
       if (eyebrow && c.hero.eyebrow) eyebrow.textContent = c.hero.eyebrow;
       if (h1 && c.hero.headline) h1.textContent = c.hero.headline;
-      const heroTexts = [c.hero.text1, c.hero.text2, c.hero.text3, c.hero.text4, c.hero.text5, c.hero.text6].filter(Boolean);
+      const heroTexts = Array.isArray(c.hero.paragraphs) && c.hero.paragraphs.length
+        ? c.hero.paragraphs.filter(Boolean)
+        : [c.hero.text1, c.hero.text2, c.hero.text3, c.hero.text4, c.hero.text5, c.hero.text6].filter(Boolean);
       const actions = hero.querySelector('.hero-actions');
       const heroParagraphs = Array.from(hero.querySelectorAll(':scope > p'));
 
@@ -89,6 +91,13 @@
       });
       const aboutRightH2 = document.querySelector('.content-card.alt .section-header h2');
       if (aboutRightH2 && c.about.rightHeading) aboutRightH2.textContent = c.about.rightHeading;
+      const certList = document.querySelector('.content-card.alt .cert-list');
+      if (certList && Array.isArray(c.about.certificates) && c.about.certificates.length) {
+        certList.innerHTML = c.about.certificates
+          .filter(x => x?.title && x?.href)
+          .map(x => `<li><a href="${escapeHtml(x.href)}">${escapeHtml(x.title)}</a></li>`)
+          .join('');
+      }
       const infoNote = document.querySelector('.content-card.alt .info-note');
       if (infoNote && c.about.infoNote) setMd(infoNote, c.about.infoNote);
     }
@@ -100,38 +109,50 @@
         const intro = sec.querySelector('.section-header p');
         if (h2 && c.approach.heading) h2.textContent = c.approach.heading;
         if (intro && c.approach.intro) setMd(intro, c.approach.intro);
-        const cards = sec.querySelectorAll('.template-card');
-        if (cards[0]) {
-          cards[0].querySelector('h3').textContent = c.approach.zielgruppeTitle || '';
-          const p = cards[0].querySelectorAll('p');
-          if (p[0]) setMd(p[0], c.approach.zielgruppeText1 || '');
-          if (p[1]) setMd(p[1], c.approach.zielgruppeText2 || '');
-        }
-        if (cards[1]) {
-          cards[1].querySelector('h3').textContent = c.approach.arbeitsweiseTitle || '';
-          const p = cards[1].querySelectorAll('p');
-          const texts = [c.approach.arbeitsweiseText1, c.approach.arbeitsweiseText2, c.approach.arbeitsweiseText3].filter(Boolean);
-          p.forEach((node, i) => {
-            if (texts[i]) setMd(node, texts[i]);
+
+        const grid = sec.querySelector('.template-grid');
+        if (grid) {
+          const legacyCards = Array.from(grid.querySelectorAll('.template-card'));
+          const imageCard = legacyCards.find(card => card.querySelector('.template-image'));
+
+          const legacyData = [
+            {
+              kicker: 'Zielgruppe',
+              title: c.approach.zielgruppeTitle,
+              paragraphs: [c.approach.zielgruppeText1, c.approach.zielgruppeText2].filter(Boolean)
+            },
+            {
+              kicker: 'Arbeitsweise',
+              title: c.approach.arbeitsweiseTitle,
+              paragraphs: [c.approach.arbeitsweiseText1, c.approach.arbeitsweiseText2, c.approach.arbeitsweiseText3].filter(Boolean)
+            },
+            {
+              kicker: 'Fastenbegleitung',
+              title: c.approach.fastenTitle,
+              paragraphs: [c.approach.fastenText1, c.approach.fastenText2, c.approach.fastenText3, c.approach.fastenText4].filter(Boolean)
+            }
+          ].filter(x => x.title);
+
+          const dynamicCards = Array.isArray(c.approach.cards) && c.approach.cards.length ? c.approach.cards : legacyData;
+
+          legacyCards.forEach(card => {
+            if (card !== imageCard) card.remove();
           });
-          for (let i = p.length; i < texts.length; i++) {
-            const newP = document.createElement('p');
-            setMd(newP, texts[i]);
-            cards[1].appendChild(newP);
-          }
-        }
-        if (cards[3]) {
-          cards[3].querySelector('h3').textContent = c.approach.fastenTitle || '';
-          const p = cards[3].querySelectorAll('p');
-          const texts = [c.approach.fastenText1, c.approach.fastenText2, c.approach.fastenText3, c.approach.fastenText4].filter(Boolean);
-          p.forEach((node, i) => {
-            if (texts[i]) setMd(node, texts[i]);
+
+          dynamicCards.forEach((entry) => {
+            const card = document.createElement('article');
+            card.className = 'template-card';
+            const kicker = entry.kicker || '';
+            const title = entry.title || '';
+            const paragraphs = Array.isArray(entry.paragraphs) ? entry.paragraphs.filter(Boolean) : [];
+            card.innerHTML = `<span class="card-kicker">${escapeHtml(kicker)}</span><h3>${escapeHtml(title)}</h3>`;
+            paragraphs.forEach(txt => {
+              const p = document.createElement('p');
+              setMd(p, txt);
+              card.appendChild(p);
+            });
+            grid.insertBefore(card, imageCard || null);
           });
-          for (let i = p.length; i < texts.length; i++) {
-            const newP = document.createElement('p');
-            setMd(newP, texts[i]);
-            cards[3].appendChild(newP);
-          }
         }
       }
     }

@@ -177,8 +177,9 @@
         if (k && oc.kicker) k.textContent = oc.kicker;
         if (t && oc.title) t.textContent = oc.title;
         const ul = card.querySelector('.offer-list');
-        if (ul && Array.isArray(oc.items) && oc.items.length) {
-          ul.innerHTML = oc.items.map(x => `<li>${renderMarkdownLight(x)}</li>`).join('');
+        const listItems = Array.isArray(oc.items) ? oc.items.filter(Boolean) : [];
+        if (ul && listItems.length) {
+          ul.innerHTML = listItems.map(x => `<li>${renderMarkdownLight(x)}</li>`).join('');
         }
 
         const textFields = [oc.text1, oc.text2, oc.text3, oc.text4].filter(Boolean);
@@ -190,7 +191,8 @@
             copy.className = 'offer-copy';
             card.appendChild(copy);
           }
-          copy.innerHTML = textFields.map(t => `<p>${renderMarkdownLight(t)}</p>`).join('');
+          const combined = [...textFields, ...listItems];
+          copy.innerHTML = combined.map(t => `<p>${renderMarkdownLight(t)}</p>`).join('');
         }
       });
     }

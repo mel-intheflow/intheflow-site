@@ -3,7 +3,7 @@
     "whatsappLabel": "Kontaktiere mich gerne per WhatsApp",
     "statusTitle": "Freie Plätze und Einstieg",
     "impulsTitle": "Lass uns unverbindlich starten",
-    "quoteText": "Das erste \"Danke\", der nach jeder Einheit abschließenden Dankbarkeitsübung, gehört alleine dir, aus Respekt und Demut, vor deinem ganz persönlichem Lebensweg.",
+    "quoteText": "\n**Das erste \"Danke\", der nach jeder Einheit abschließenden Dankbarkeitsübung, gehört alleine dir, aus Respekt und Demut, vor deinem ganz persönlichem Lebensweg.**",
     "intro": "Gemeinsam können wir gerne ein Konzept für dich, eine Gruppe, fürs Firmenyoga oder für Fastenbegleitung erarbeiten.",
     "statusText1": "Ob aktuell freie Plätze verfügbar sind, erfährst du am schnellsten per WhatsApp.",
     "statusText2": "Ein Einstieg ist als kostenlose Schnuppereinheit oder über den Yoga-Basis-Block möglich.",
@@ -81,12 +81,12 @@
   },
   "courseCards": [
     {
-      "kicker": "Online Yoga",
-      "title": "Zoom Kurs",
+      "kicker": "Weiz",
+      "title": "Gemeindezentrum Mortantsch",
       "rows": [
-        "Ort: Online mit Zoom App",
-        "**Zeit: wieder verfügbar ab 2027**",
-        "Info: Online-Kurs á 60 min.  Den Link zum Einloggen gibt es auf Anfrage."
+        "Ort: Weiz/Mortantsch, Gemeindezentrum",
+        "**Zeit: Dienstag von 18:00 bis 19:15 Uhr**",
+        "Info: Feiertage entfallen. Kleine Sommer- und Winterpause"
       ]
     },
     {
@@ -99,22 +99,21 @@
       ]
     },
     {
-      "kicker": "Weiz",
-      "title": "Gemeindezentrum Mortantsch",
-      "rows": [
-        "Ort: Weiz/Mortantsch, Gemeindezentrum",
-        "**Zeit: Dienstag von 18:00 bis 19:15 Uhr**",
-        "Info: Feiertage entfallen. Kleine Sommer- und Winterpause",
-        "Saisonal: Outdoor Yoga von Juni bis August, Indoor Yoga von September bis Mai"
-      ]
-    },
-    {
       "kicker": "Outdoor",
       "title": "Weiz Outdoor Yoga",
       "rows": [
         "Ort: Stelzhammergasse 13, Weiz",
-        "**Zeit: Juni - August, Dienstag od. Donnerstag (Wetterabhängig) 18:00 bis 19:00 Uhr**",
-        "Info: mind. 8 Yoga-Einheiten im Freien."
+        "**Zeit: Juni - August, Dienstag 18:00 bis 19:00 Uhr**",
+        "Info: An verregneten Dienstagen, findet die Outdoor Einheit dann am Donnerstag statt."
+      ]
+    },
+    {
+      "kicker": "Online Yoga",
+      "title": "Zoom Kurs",
+      "rows": [
+        "Ort: Online mit Zoom App",
+        "**Zeit: wieder verfügbar ab 2027**",
+        "Info: Online-Kurs á 60 min.  Den Link zum Einloggen gibt es auf Anfrage."
       ]
     }
   ],
@@ -129,7 +128,7 @@
         "title": "Für wen ist mein Yoga geeignet?",
         "paragraphs": [
           "Meine Kurse sind für Menschen geeignet, die sich im Alltag eine bewusste Pause wünschen — egal ob Einsteiger oder Wiedereinsteiger.\n\nBesonders angesprochen sind Teilnehmerinnen und Teilnehmer aus dem Raum Weiz und Gleisdorf, die in einer kleinen, persönlichen Gruppe üben möchten.",
-          "Yoga ist mehr als Bewegung. Es ist ein Weg, den eigenen Körper bewusster wahrzunehmen, den Atem als Kraftquelle zu nutzen und im Alltag wieder mehr Ruhe, Stabilität und Selbstvertrauen zu finden."
+          "**Yoga ist mehr als Bewegung. Es ist ein Weg, den eigenen Körper bewusster wahrzunehmen, den Atem als Kraftquelle zu nutzen und im Alltag wieder mehr Ruhe, Stabilität und Selbstvertrauen zu finden.**"
         ]
       },
       {
@@ -137,7 +136,7 @@
         "title": "Was macht meine Yogaeinheiten besonders?",
         "paragraphs": [
           "Da ich in den letzten 12 Jahren nicht nur Triyoga praktizierte, sondern auch viele andere Yogastile und Lehrer kennenlernen durfte, hat sich mein ganz persönlicher Yogastil entwickelt. **Triyoga** mit den charakteristischen wellenförmigen Bewegungen der Wirbelsäule bilden die Basis, aber auch **Sonnengrüße** werden wegen ihrer vielen gesundheitlichen Vorteile integriert.",
-          "Durch Atembewusstsein, dem Wechsel aus Flows und Asanas sowie Mediation, fließen wir am Ende der Stunde entspannt in die beliebte Schlussentspannung - Yoga Nidra. \n\nIn meinen Einheiten verwende ich gerne Kartendecks, hochwertige ätherische Öle, Räucherwerk und Musik, (bei Seminaren und Retreats auch Handpan, Klangschalen uvm.)."
+          "Durch **Atembewusstsein, dem Wechsel aus Flows und Asanas sowie Mediation**, fließen wir am Ende der Stunde entspannt in die beliebte Schlussentspannung - **Yoga Nidra.**\n\nIn meinen Einheiten verwende ich gerne Kartendecks, hochwertige ätherische Öle, Räucherwerk und Musik, (bei Seminaren und Retreats auch Handpan, Klangschalen uvm.)."
         ]
       },
       {
@@ -145,7 +144,7 @@
         "title": "Fastenbegleitung mit Struktur und individueller Begleitung",
         "paragraphs": [
           "**- \"Geh du vor\", sagt die Seele zum Körper, \"auf mich hört er nicht\". - Ulrich Schaffer**\n\nDie Fastenbegleitung richtet sich an Menschen, die Körper und Geist bewusst entlasten und diesen Prozess mit Yoga achtsam unterstützen möchten.\n",
-          "Dazu gehören individuelles Vorgehen, hilfreiche Unterlagen und auf Wunsch persönliche Begleitung während der definierten Zeit.\nFasten beschränkt sich nicht auf den Verzicht. \n\nBei mir wird Fasten zu einer guten, wertvollen ganzheitlichen Erinnerung. Nämlich GEMEINSAM MIT dem Körper (nicht dagegen) und dem einbeziehen von Geist und Seele. Denn zu jedem körperlichen \"Knoten\" gehört auch ein seelischer."
+          "Dazu gehören individuelles Vorgehen, hilfreiche Unterlagen und auf Wunsch persönliche Begleitung während der definierten Zeit.\n**Fasten beschränkt sich nicht auf den Verzicht.**\n\nBei mir wird Fasten zu einer guten, wertvollen ganzheitlichen Erinnerung. Nämlich **GEMEINSAM MIT dem Körper** (nicht dagegen) und dem einbeziehen von Geist und Seele. Denn zu jedem körperlichen \"Knoten\" gehört auch ein seelischer."
         ]
       }
     ],
@@ -176,7 +175,7 @@
     "infoNote": "Yoga hilft enorm dabei, sich in seiner Mitte wiederzufinden. Es kann viel Klarheit und Selbstsicherheit ins Leben bringen.",
     "certificates": [
       {
-        "title": "TriYoga Basics- Level 3",
+        "title": "TriYoga",
         "href": "zertifikate/TriyogaZertifikat.pdf"
       },
       {
@@ -217,10 +216,10 @@
     {
       "kicker": "Yogaabend mit Pflanzenwissen - Deep Relax",
       "title": "Yoga mit Sound & Düften",
-      "text": "Dieses Jahres-Special verbindet sanfte Yogapraxis mit Klang und Themenbezogenes Wissen über Pflanzen und deren ausgewählten ätherischen Ölen.\n\nIn Zusammenarbeit mit Kräuterpädagogin Sabrina Lukas [www.natur-sinn.at]\n",
+      "text": "Dieses Jahres-Special verbindet sanfte Yogapraxis mit Klang und Themenbezogenes Wissen über Pflanzen und deren ausgewählten ätherischen Ölen.\n\nIn Zusammenarbeit mit Kräuterpädagogin Sabrina Lukas \n[www.natur-sinn.at]\n",
       "format": "Vor Ort, Hofstätten a.d. Raab, Feuerwehrhaus",
       "haeufigkeit": "Einmal pro Jahr",
-      "text2": "Dauer ca. 3 Stunden\nDatum und Einzelheiten folgen.",
+      "text2": "Beginn: 17:30\nDauer ca. 3 Stunden\nDatum und Einzelheiten folgen.",
       "text3": "",
       "termin": "Herbst 2026"
     }
@@ -248,7 +247,7 @@
     "badgeTitle": "Raum Weiz und Gleisdorf"
   },
   "footer": {
-    "copyright": "© in the flow"
+    "copyright": "© intheflow"
   },
   "angebot": {
     "headline": "Yoga, Fastenbegleitung, Retreats und mehr",
